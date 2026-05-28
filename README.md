@@ -1,4 +1,5 @@
-![image](![Banner.png](images/Banner.png))
+<img width="1012" height="512" alt="image" src="https://github.com/user-attachments/assets/724612b4-647f-4a2a-9023-c248ca4fe66f" />
+
 
 
 An Among Us mod meant to expand on the base game whilst keeping the vanilla feel ✨
