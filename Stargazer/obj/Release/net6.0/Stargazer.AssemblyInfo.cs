@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("The Silliest Among Us Mod")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da9453ef4409288be8de07aa4e316437822533fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5171cecb4af1321708908824a2ea3abce5bff3a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stargazer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stargazer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

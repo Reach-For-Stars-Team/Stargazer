@@ -1,0 +1,16 @@
+{
+  "Name": "Stargazer",
+  "Description": "An Among Us mod meant to expand on the base game whilst keeping the vanilla feel!",
+  "Tags": [
+  ],
+  "Icon": "Stargazer.Resources.UI.ModIcon.png",
+  "License": "GPLv3",
+  "Authors": [
+    "WanderingPix"
+  ],
+  "Links": {
+    "Discord Server": "https://discord.com/invite/Q9UZvaaHbP",
+    "Itch Page": "https://pixmakesgames.itch.io/reach-for-stars",
+    "Source Code": "https://github.com/WanderingPix/ReachForStars"
+  }
+}

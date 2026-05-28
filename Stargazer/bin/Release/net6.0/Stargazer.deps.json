@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Stargazer/1.0.0": {
+        "dependencies": {
+          "AllOfUs.MiraAPI": "0.3.6",
+          "Reactor": "2.5.0-ci.371"
+        },
+        "runtime": {
+          "Stargazer.dll": {}
+        }
+      },
+      "AllOfUs.MiraAPI/0.3.6": {
+        "dependencies": {
+          "Reactor": "2.5.0-ci.371"
+        },
+        "runtime": {
+          "lib/net6.0/MiraAPI.dll": {
+            "assemblyVersion": "0.3.6.0",
+            "fileVersion": "0.3.6.0"
+          }
+        }
+      },
+      "Reactor/2.5.0-ci.371": {
+        "runtime": {
+          "lib/net6.0/Reactor.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stargazer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AllOfUs.MiraAPI/0.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NAnERdVXh12F/ZP/ja9hqt36cin0IgCZR8NhU6NNDeTdKl3iTqNb9h56JOm/Ef22X9C+yFy4l8XXuyG2IcOz6A==",
+      "path": "allofus.miraapi/0.3.6",
+      "hashPath": "allofus.miraapi.0.3.6.nupkg.sha512"
+    },
+    "Reactor/2.5.0-ci.371": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LMKHi2CPACJJkBK117HT6zKS8mkv1c/RUZusYlnFExS2nGCD/haqf+YkTXyK561T5+BSg0m0R4ubSG30cdYDNg==",
+      "path": "reactor/2.5.0-ci.371",
+      "hashPath": "reactor.2.5.0-ci.371.nupkg.sha512"
+    }
+  }
+}
