@@ -6,7 +6,6 @@ An Among Us mod meant to expand on the base game whilst keeping the vanilla feel
 This is achieved via making roles that fit seamlessly into the core game loop, and making use of animations
 
 # Features:
-
 - 21 New roles to spice up the game!
 - New colors to make you look more stylish!
 - Comsistent Artwork!
