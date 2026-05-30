@@ -31,7 +31,7 @@ public enum RPC : uint
     
     Sleep = 12,
     
-    ThrowShuriken = 13,
+    SwapRoles = 13,
     
     UseWildCard = 14,
     

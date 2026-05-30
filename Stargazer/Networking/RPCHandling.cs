@@ -17,8 +17,8 @@ using Reactor.Networking.Attributes;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using Stargazer.Roles.Impostors.Florist;
+using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
-using UnityEngine.ProBuilder;
 using Helpers = MiraAPI.Utilities.Helpers;
 using Object = UnityEngine.Object;
 
@@ -355,6 +355,7 @@ public static class RPCHandler
         btnTarget.GetComponent<BoxCollider2D>().enabled = false;
         btnTarget.enabled = false;
     }
+    
     [MethodRpc((uint)RPC.MoveFloristControlledPlayer)]
     public static void RpcMoveFloristControlledPlayer(this PlayerControl source, byte targetId, float x, float y)
     {
@@ -483,5 +484,20 @@ public static class RPCHandler
         {
             control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white, Color.white.ToClearColor(), 0.4f));
         };
+    }
+    [MethodRpc((uint)RPC.SwapRoles)]
+    public static void RpcSwapRoles(this PlayerControl source, PlayerControl target, uint roleId)
+    {
+        RoleTypes type = (RoleTypes)roleId;
+        if (target.Data.Role.Role == type)
+        {
+            var ogRole = target.Data.RoleType;
+            RoleManager.Instance.SetRole(target, (RoleTypes)RoleId.Get<RolelessRole>());
+            RoleManager.Instance.SetRole(source, type);
+        }
+        else
+        {
+            if (OptionGroupSingleton<RolelessOptions>.Instance.SuicideWhenMisguess) target.CustomMurder(source, MurderResultFlags.Succeeded, false, true, false, false, true);
+        }
     }
 }
