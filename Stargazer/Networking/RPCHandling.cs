@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Linq;
+using AmongUs.GameOptions;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
+using MiraAPI.Networking;
+using MiraAPI.Roles;
 using MiraAPI.Utilities;
 using Stargazer.Components;
 using Stargazer.Components.Tasks;
@@ -16,6 +19,7 @@ using Reactor.Networking.Attributes;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using Stargazer.Roles.Impostors.Florist;
+using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
 using UnityEngine.ProBuilder;
 using Helpers = MiraAPI.Utilities.Helpers;
@@ -395,6 +399,22 @@ public static class RPCHandler
                 //    if (control.TryGetModifier<BlossomModifier>(out BlossomModifier m)) m.IncreaseBlossom();
                 //};
                 break;
+        }
+    }
+
+    [MethodRpc((uint)RPC.SwapRoles)]
+    public static void RpcSwapRoles(this PlayerControl source, PlayerControl target, uint roleId)
+    {
+        RoleTypes type = (RoleTypes)roleId;
+        if (target.Data.Role.Role == type)
+        {
+            var ogRole = target.Data.RoleType;
+            RoleManager.Instance.SetRole(target, (RoleTypes)RoleId.Get<RolelessRole>());
+            RoleManager.Instance.SetRole(source, type);
+        }
+        else
+        {
+            if (OptionGroupSingleton<RolelessOptions>.Instance.SuicideWhenMisguess) target.CustomMurder(source, MurderResultFlags.Succeeded, false, true, false, false, true);
         }
     }
 }
