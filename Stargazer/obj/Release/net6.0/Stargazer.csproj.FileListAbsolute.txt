@@ -24,3 +24,16 @@ C:/Users/User/Desktop/My Personal projects/Among Us/ReachForStars/ReachForStars/
 /home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/obj/Release/net6.0/refint/Stargazer.dll
 /home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/obj/Release/net6.0/Stargazer.pdb
 /home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/obj/Release/net6.0/ref/Stargazer.dll
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.dll
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\refint\Stargazer.dll
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.pdb
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\bin\Release\net6.0\Stargazer.deps.json
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\bin\Release\net6.0\Stargazer.dll
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\bin\Release\net6.0\Stargazer.pdb
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.csproj.AssemblyReference.cache
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.AssemblyInfoInputs.cache
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.AssemblyInfo.cs
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.csproj.CoreCompileInputs.cache
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\ref\Stargazer.dll
+C:\Users\sbrou\RiderProjects\stargazer\Stargazer\obj\Release\net6.0\Stargazer.sourcelink.json
