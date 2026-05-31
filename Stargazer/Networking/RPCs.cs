@@ -36,5 +36,7 @@ public enum RPC : uint
     UseWildCard = 14,
     
     DisconnectVent = 15,
-    SpawnFloristTrap = 16
+    SpawnFloristTrap = 16,
+    MoveFloristControlledPlayer = 17,
+    StopFloristControl = 18
 }
