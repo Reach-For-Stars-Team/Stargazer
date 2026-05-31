@@ -354,7 +354,42 @@ public static class RPCHandler
         btnTarget.GetComponent<BoxCollider2D>().enabled = false;
         btnTarget.enabled = false;
     }
-    
+    [MethodRpc((uint)RPC.MoveFloristControlledPlayer)]
+    public static void RpcMoveFloristControlledPlayer(this PlayerControl source, byte targetId, float x, float y)
+    {
+        var target = PlayerControlUtils.GetPlayerById(targetId);
+        if (target == null || target.Data == null || target.Data.IsDead)
+        {
+            return;
+        }
+
+        if (!target.HasModifier<ControlledByFloristModifier>())
+        {
+            return;
+        }
+
+        Vector2 velocity = new Vector2(x, y);
+
+        target.MyPhysics.body.velocity = velocity;
+        target.MyPhysics.HandleAnimation(target.Data.IsDead);
+    }
+
+    [MethodRpc((uint)RPC.StopFloristControl)]
+    public static void RpcStopFloristControl(this PlayerControl source, byte targetId)
+    {
+        var target = PlayerControlUtils.GetPlayerById(targetId);
+        if (target == null)
+        {
+            return;
+        }
+
+        if (target.HasModifier<ControlledByFloristModifier>())
+        {
+            target.RpcRemoveModifier<ControlledByFloristModifier>();
+        }
+
+        target.MyPhysics.body.velocity = Vector2.zero;
+    }
     [MethodRpc((uint)RPC.SpawnFloristTrap)]
     public static void RpcSpawnFloristTrap(this PlayerControl source, uint id)
     {
@@ -382,18 +417,40 @@ public static class RPCHandler
             case FloristRole.FlowerTypes.Flowers:
                 obj = UnityObject.Instantiate(Assets.FloristFlowers.LoadAsset());
                 obj.transform.position = source.transform.position;
+
                 PlayerMaterial.SetColors(FloristRole.FlowerColors.Random(), obj.GetComponent<SpriteRenderer>());
+
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
+                // playerDetectionBehaviour.Size = new Vector2(2.7f, 1.5f);
+
+                playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
+                playerDetectionBehaviour.Radius = new Vector2(1.35f, 0.75f);
+
+                // DebugRadius.CreateCircle(
+                //     obj.transform,
+                //     playerDetectionBehaviour.LocalOffset,
+                //     playerDetectionBehaviour.Radius,
+                //     999
+                // );
+
                 playerDetectionBehaviour.OnEnter = control =>
                 {
                     control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
-                    if (!control.HasModifier<BlossomModifier>()) control.AddModifier<BlossomModifier>();
+
+                    if (!control.HasModifier<BlossomModifier>())
+                    {
+                        control.RpcAddModifier<BlossomModifier>();
+                    }
                 };
-                //playerDetectionBehaviour.OnStay = control =>
-                //{
-                //    control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white, Color.white.ToClearColor(), 0.4f));
-                //    if (control.TryGetModifier<BlossomModifier>(out BlossomModifier m)) m.IncreaseBlossom();
-                //};
+
+                playerDetectionBehaviour.OnStay = control =>
+                {
+                    if (control.TryGetModifier<BlossomModifier>(out BlossomModifier m))
+                    {
+                        m.IncreaseBlossom();
+                    }
+                };
                 break;
         }
     }
