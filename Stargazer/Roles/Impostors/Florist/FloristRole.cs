@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Stargazer.Roles.Impostors.Florist;
 
-[MiraIgnore]
+// [MiraIgnore]
 public class FloristRole : ImpostorRole, ICustomRole
 {
     public string RoleName => "Florist";
