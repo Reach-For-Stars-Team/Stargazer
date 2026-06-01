@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using AchievementsAPI.API;
 using MiraAPI.Events;
 using MiraAPI.Events.Vanilla.Gameplay;
 using MiraAPI.GameOptions;
@@ -12,6 +13,7 @@ using Reactor.Utilities;
 using Stargazer.Components;
 using Stargazer.Utilities;
 using Reactor.Utilities.Extensions;
+using Stargazer.Features;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -137,6 +139,7 @@ public class CarryingModifier(byte PlayerId) : BaseModifier
                             Effects.Action(new System.Action((() => Player.CustomMurder(nearbyPlayer,
                                 MurderResultFlags.DecisionByHost, teleportMurderer: false, showKillAnim: false))))
                         ));
+                        if (Player.AmOwner) AchievementsTabSingleton<StargazerAchievements>.Instance.CarrierAchievement2.Unlock();
                     }
                     
                     else if (nearbyVent && options.ThrowInVent)
@@ -145,6 +148,7 @@ public class CarryingModifier(byte PlayerId) : BaseModifier
                         Body.transform.SetParent(nearbyVent.transform);
                         if (nearbyVent.EnterVentAnim) nearbyVent.myAnim.Play(nearbyVent.EnterVentAnim, 1f);
                         Coroutines.Start(RFSEffects.Boop(nearbyVent.transform, 0.3f, 2.5f, 0.3f));
+                        if (Player.AmOwner) AchievementsTabSingleton<StargazerAchievements>.Instance.CarrierAchievement3.Unlock();
                     }
                 })
         ));

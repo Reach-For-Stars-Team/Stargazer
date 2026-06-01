@@ -166,4 +166,7 @@ public static class Assets
     public static LoadableResourceAsset WildcardRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.wildcard.png");
     public static LoadableBundleAsset<GameObject> FloristTallGrass { get; } = new("FloristTallGrass.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> FloristFlowers { get; } = new("FloristFlowers.prefab", Bundle);
+    public static LoadableResourceAsset ModIcon { get; } = new("Stargazer.Resources.UI.ModIcon.png");
+    public static LoadableResourceAsset Trophy { get; } = new("Stargazer.Resources.UI.Trophy.png");
+    public static LoadableResourceAsset TrophyActive { get; } = new("Stargazer.Resources.UI.TrophyActive.png");
 }

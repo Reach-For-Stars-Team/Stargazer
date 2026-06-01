@@ -1,9 +1,11 @@
+using AchievementsAPI.API;
 using MiraAPI.GameOptions;
 using MiraAPI.Hud;
 using MiraAPI.Modifiers;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using PowerTools;
+using Stargazer.Features;
 using UnityEngine;
 
 namespace Stargazer.Roles.Impostors.Carrier;
@@ -13,6 +15,7 @@ public class Carry : CustomActionButton<DeadBody>
     protected override void OnClick()
     {
         Button.OverrideText("Throw");
+        AchievementsTabSingleton<StargazerAchievements>.Instance.CarrierAchievement1.Unlock();
         PlayerControl.LocalPlayer.RpcAddModifier<CarryingModifier>(Target.ParentId);
     }
 

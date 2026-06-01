@@ -1,10 +1,12 @@
 using System.Linq;
+using AchievementsAPI.API;
 using Il2CppSystem;
 using MiraAPI.Hud; 
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using Reactor.Utilities.Extensions;
 using Rewired;
+using Stargazer.Features;
 using Stargazer.Networking;
 using UnityEngine;
 using UnityEngine.Events;
@@ -42,6 +44,8 @@ public class DisconnectAbility : CustomActionButton<Vent>
                     Target.SetButtons(false);
                     
                     PlayerControl.LocalPlayer.moveable = true;
+                    AchievementsTabSingleton<StargazerAchievements>.Instance.MechanicAchievement1.Unlock();
+                    if (Target.Buttons.Count(x => x.enabled) == 0) AchievementsTabSingleton<StargazerAchievements>.Instance.MechanicAchievement2.Unlock();
                 }
             }));
         }

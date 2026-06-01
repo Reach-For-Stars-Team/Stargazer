@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using AchievementsAPI.API;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Utilities;
@@ -15,6 +16,7 @@ using Stargazer.Utilities;
 using Reactor.Networking.Attributes;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
+using Stargazer.Features;
 using Stargazer.Roles.Impostors.Florist;
 using UnityEngine;
 using UnityEngine.ProBuilder;
@@ -277,7 +279,10 @@ public static class RPCHandler
         })));
         
         //Modifier assignment logic
-        foreach (var p in Helpers.GetClosestPlayers(source, 3f * OptionGroupSingleton<SleepcasterOptions>.Instance.AbilityRange.Value))
+        var closePlayers = Helpers.GetClosestPlayers(source,
+            3f * OptionGroupSingleton<SleepcasterOptions>.Instance.AbilityRange.Value);
+        if (source.AmOwner && closePlayers.Count >= 2) AchievementsTabSingleton<StargazerAchievements>.Instance.SleepcasterAchievement1.Unlock();
+        foreach (var p in closePlayers)
         {
             p.AddModifier<SleepyModifier>();
         }

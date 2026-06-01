@@ -1,5 +1,6 @@
 using System;
 using MiraAPI.Utilities;
+using Stargazer.Utilities;
 using UnityEngine;
 
 namespace Stargazer.Features.MainMenu;
@@ -16,5 +17,14 @@ public static class ReworkedMainMenu
         }
 
         menu.mainButtons[0].transform.parent.parent.GetComponent<SpriteRenderer>().material.color = new(0f, 0.9f, 1.1f, 1);
+
+        var trophyBtn = PassiveButtonUtils.CreatePassiveButton("TrophyButton", Assets.Trophy, Assets.TrophyActive,
+            Vector2.one,
+            () =>
+            {
+                var achievementMenu = UnityObject.Instantiate(AchievementsAPI.Assets.achievementPrefab);
+                menu.DeactivateMainMenuUI();
+            });
+        trophyBtn.transform.position = menu.quitButton.transform.position + new Vector3(4, 0, 0);
     }
 }

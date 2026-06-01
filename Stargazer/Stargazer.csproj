@@ -16,4 +16,9 @@
         <EmbeddedResource Include="Resources\**\*.bundle"/>
 	    <EmbeddedResource Include="modinfo.json"/>
     </ItemGroup>
+    <ItemGroup>
+        <Reference Include="Achievements API">
+            <HintPath>..\Packages\Local\AchievementsAPI.dll</HintPath>
+        </Reference>
+    </ItemGroup>
 </Project>

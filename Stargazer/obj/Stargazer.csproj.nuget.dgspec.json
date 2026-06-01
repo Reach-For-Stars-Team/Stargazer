@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/Stargazer.csproj": {}
+    "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/Stargazer.csproj": {}
   },
   "projects": {
-    "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/Stargazer.csproj": {
+    "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/Stargazer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/Stargazer.csproj",
+        "projectUniqueName": "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/Stargazer.csproj",
         "projectName": "Stargazer",
-        "projectPath": "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/Stargazer.csproj",
+        "projectPath": "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/Stargazer.csproj",
         "packagesPath": "/home/pix/.nuget/packages/",
-        "outputPath": "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/obj/",
+        "outputPath": "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/nuget.config",
+          "/home/pix/My Personal projects/Among Us/Stargazer/nuget.config",
           "/home/pix/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [

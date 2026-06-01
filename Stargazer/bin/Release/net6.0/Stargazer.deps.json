@@ -9,7 +9,8 @@
       "Stargazer/1.0.0": {
         "dependencies": {
           "AllOfUs.MiraAPI": "0.3.6",
-          "Reactor": "2.5.0-ci.371"
+          "Reactor": "2.5.0-ci.371",
+          "AchievementsAPI": "1.0.0.0"
         },
         "runtime": {
           "Stargazer.dll": {}
@@ -31,6 +32,14 @@
           "lib/net6.0/Reactor.dll": {
             "assemblyVersion": "2.5.0.0",
             "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "AchievementsAPI/1.0.0.0": {
+        "runtime": {
+          "AchievementsAPI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -55,6 +64,11 @@
       "sha512": "sha512-LMKHi2CPACJJkBK117HT6zKS8mkv1c/RUZusYlnFExS2nGCD/haqf+YkTXyK561T5+BSg0m0R4ubSG30cdYDNg==",
       "path": "reactor/2.5.0-ci.371",
       "hashPath": "reactor.2.5.0-ci.371.nupkg.sha512"
+    },
+    "AchievementsAPI/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

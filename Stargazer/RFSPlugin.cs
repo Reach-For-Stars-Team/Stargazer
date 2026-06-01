@@ -1,4 +1,5 @@
 using System.IO;
+using AchievementsAPI;
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
@@ -19,6 +20,7 @@ namespace Stargazer;
 [BepInAutoPlugin("com.missingpixel.stargazer", "Stargazer", "2.0.1")]
 [BepInProcess("Among Us.exe")]
 [BepInDependency(ReactorPlugin.Id)]
+[BepInDependency(AchievementsAPIPlugin.Id)]
 [BepInDependency(MiraApiPlugin.Id)]
 [ReactorModFlags(ModFlags.RequireOnAllClients)]
 public partial class StargazerPlugin : BasePlugin, IMiraPlugin

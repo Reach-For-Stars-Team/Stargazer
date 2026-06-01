@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AYs8ikpoQIs=",
+  "dgSpecHash": "gV+WbUPJcJw=",
   "success": true,
-  "projectFilePath": "/home/pix/My Personal projects/Among Us/ReachForStars/ReachForStars/Stargazer/Stargazer.csproj",
+  "projectFilePath": "/home/pix/My Personal projects/Among Us/Stargazer/Stargazer/Stargazer.csproj",
   "expectedPackageFiles": [
     "/home/pix/.nuget/packages/allofus.miraapi/0.3.6/allofus.miraapi.0.3.6.nupkg.sha512",
     "/home/pix/.nuget/packages/amongus.gamelibs.steam/2025.10.14/amongus.gamelibs.steam.2025.10.14.nupkg.sha512",
