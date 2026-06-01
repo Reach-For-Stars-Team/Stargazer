@@ -2,6 +2,7 @@ using System.Collections;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stargazer.Utilities;
 
@@ -77,5 +78,31 @@ public class RFSEffects
         }
         target.position = end;
         yield break;
+    }
+    public static IEnumerator ColorPulseAndDestroy(Graphic renderer, Color start, Color max, Color end, float pulseDuration, float fadeDuration)
+    {
+        yield return Coroutines.Start(ColorFade(renderer, start, max, pulseDuration));
+        yield return Coroutines.Start(ColorFade(renderer, max, end, fadeDuration)); 
+        
+        renderer.gameObject.Destroy();
+
+        yield break;
+    }
+    public static IEnumerator ColorFade(
+        Graphic self,
+        Color source,
+        Color target,
+        float duration)
+    {
+        if ((bool) (UnityEngine.Object) self)
+        {
+            self.enabled = true;
+            for (float t = 0.0f; (double) t < (double) duration; t += Time.deltaTime)
+            {
+                self.color = Color.Lerp(source, target, t / duration);
+                yield return (object) null;
+            }
+            self.color = target;
+        }
     }
 }

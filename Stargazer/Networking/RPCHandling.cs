@@ -16,6 +16,7 @@ using Stargazer.Utilities;
 using Reactor.Networking.Attributes;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
+using Stargazer.Components.Minigames;
 using Stargazer.Roles.Impostors.Florist;
 using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
@@ -128,12 +129,6 @@ public static class RPCHandler
 
         line.gameObject.Destroy();
         yield break;
-    }
-
-    [MethodRpc((uint)RPC.SeekerScream)]
-    public static void RpcScream()
-    {
-        PlayerControl.LocalPlayer.transform.GetComponent<HnSImpostorScreamSfx>().LocalImpostorScream();
     }
 
     [MethodRpc((uint)RPC.ChangeBodyType)]
@@ -499,5 +494,11 @@ public static class RPCHandler
         {
             if (OptionGroupSingleton<RolelessOptions>.Instance.SuicideWhenMisguess) target.CustomMurder(source, MurderResultFlags.Succeeded, false, true, false, false, true);
         }
+    }
+
+    [MethodRpc((uint)RPC.ShootPlayer)]
+    public static void RpcShootPlayer(this PlayerControl source, PlayerControl target, int bulletCount)
+    {
+        if (target.AmOwner) ShotMinigame.CreateAndOpen(bulletCount);
     }
 }
