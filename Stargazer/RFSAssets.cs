@@ -157,6 +157,12 @@ public static class Assets
         new("Stargazer.Resources.UI.PhaseTarget.png", 128);
     public static LoadableResourceAsset Target { get; } = 
         new("Stargazer.Resources.UI.Target.png", 75);
+    
+    public static LoadableResourceAsset Star { get; } = 
+        new("Stargazer.Resources.UI.Star.png", 100);
+
+    public static LoadableBundleAsset<Material> ScrollingSpriteShader = new("ScrollingSprite.shader", Bundle);
+    
     //Wildcard
     public static LoadableBundleAsset<GameObject> WildcardDeckPrefab = new("WildcardCardDeckCanvas.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> ChestPopoutPrefab = new("ChestPopout.prefab", Bundle);
@@ -167,6 +173,8 @@ public static class Assets
     public static LoadableBundleAsset<GameObject> FloristTallGrass { get; } = new("FloristTallGrass.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> FloristFlowers { get; } = new("FloristFlowers.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> RoleThiefMinigame { get; } = new("RoleThiefMinigame.prefab", Bundle);
+    public static LoadableBundleAsset<GameObject> ShotMinigame { get; } = new("ShotMinigame.prefab", Bundle);
+    public static LoadableBundleAsset<GameObject> SheriffShootMinigame { get; } = new("SheriffShootMinigame.prefab", Bundle);
     public static LoadableResourceAsset CrewmateRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.crewmate.png");
     public static LoadableResourceAsset ImpostorRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.impostor.png");
 }
