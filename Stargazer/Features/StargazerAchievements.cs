@@ -13,9 +13,8 @@ public class StargazerAchievements : AchievementsTab
     public override string Name => "Stargazer Achievements";
     public override Color GetTabColor()
     {
-        return RFSPalette.RfsColor2;
+        return RFSPalette.RfsColor;
     }
-
     public override Sprite GetIcon()
     {
         return Assets.ModIcon.LoadAsset();
