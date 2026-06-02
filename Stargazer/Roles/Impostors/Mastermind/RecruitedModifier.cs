@@ -31,8 +31,8 @@ namespace Stargazer.Roles.Impostors.Mastermind;
 public class RecruitedModifier() : GameModifier
 {
     public override string ModifierName => "Recruited By Mastermind";
-    public override bool HideOnUi => true;
-    public override bool ShowInFreeplay => false;
+    public override bool HideOnUi => false;
+    public override bool ShowInFreeplay => true;
     public override int GetAmountPerGame()
     {
         return 0;
