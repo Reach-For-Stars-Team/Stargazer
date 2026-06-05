@@ -18,6 +18,8 @@ public class FloristOptions : AbstractOptionGroup<FloristRole>
         new ModdedNumberOption("Control Duration", 10, 5, 30, 5, MiraNumberSuffixes.Seconds);
 
     public ModdedNumberOption BlossomTime { get; } =
-        new ModdedNumberOption("Blossom or something idk", 30, 5, 60, 5, MiraNumberSuffixes.Seconds);
-
+        new ModdedNumberOption("Exposure to flowers needed to be controlled", 3, 3, 5, 1, MiraNumberSuffixes.Seconds);
+    
+    public ModdedToggleOption ResetBlossomAfterControl { get; } =
+        new ModdedToggleOption("Reset exposure after having been controlled", true);
 }

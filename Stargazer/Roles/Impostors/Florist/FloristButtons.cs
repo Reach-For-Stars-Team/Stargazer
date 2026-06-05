@@ -17,9 +17,44 @@ public class PlantButton : CustomActionButton
 {
     protected override void OnClick()
     {
-        PlayerControl.LocalPlayer.RpcSpawnFloristTrap(1);
+        PlayerControl.LocalPlayer.RpcSpawnFloristTrap((uint) nextType);
+        SetNextType((FloristRole.FlowerTypes) UnityRandom.RandomRangeInt(0, 4));
     }
 
+    public FloristRole.FlowerTypes nextType;
+
+    public void SetNextType(FloristRole.FlowerTypes newType)
+    {
+        if (Helpers.CheckChance(25)) nextType = FloristRole.FlowerTypes.Flowers; //Weighted chance for flowers.
+        nextType = newType;
+        Sprite newSprite = null;
+        Color outlineColor = Color.white;
+        switch (nextType)
+        {
+            case FloristRole.FlowerTypes.Flowers:
+                newSprite = Assets.PlantFlowersButton.LoadAsset();
+                outlineColor = new Color32(255, 125, 255, 255);
+                break;
+            case FloristRole.FlowerTypes.TallGrass:
+                newSprite = Assets.PlantGrassButton.LoadAsset();
+                outlineColor = new Color32(159, 217, 46, 255);
+                break;
+            case FloristRole.FlowerTypes.Thorns:
+                newSprite = Assets.PlantThornsButton.LoadAsset();
+                outlineColor = new Color32(98, 161, 0, 255);
+                break;
+            case FloristRole.FlowerTypes.Mushroom:
+                newSprite = Assets.PlantMushroomButton.LoadAsset();
+                outlineColor = new Color32(120, 0, 75, 255);
+                break;
+            default:
+                newSprite = Assets.PlantFlowersButton.LoadAsset();
+                outlineColor = Color.white;
+                break;
+        }
+        OverrideSprite(newSprite);
+        SetTextOutline(outlineColor);
+    }
     public override bool Enabled(RoleBehaviour role)
     {
         return role is FloristRole;
@@ -31,30 +66,28 @@ public class PlantButton : CustomActionButton
 
     public override LoadableAsset<Sprite> Sprite => Assets.PlaceHolder;
 
-    private static bool HasAnyControllablePlayer()
+    public override void CreateButton(Transform parent)
     {
-        return PlayerControl.AllPlayerControls
-            .ToArray()
-            .Any(player =>
-                player != PlayerControl.LocalPlayer &&
-                player.Data != null &&
-                !player.Data.IsDead &&
-                player.TryGetModifier<BlossomModifier>(out BlossomModifier m) &&
-                m.BlossomingValue >= BlossomModifier.RequiredBlossomValue
-            );
+        base.CreateButton(parent);
+        SetNextType((FloristRole.FlowerTypes) UnityRandom.RandomRangeInt(0, 3));
     }
+    //private static bool HasAnyControllablePlayer()
+    //{
+    //    return PlayerControl.AllPlayerControls
+    //        .ToArray()
+    //        .Any(player =>
+    //            player != PlayerControl.LocalPlayer &&
+    //            player.Data != null &&
+    //            !player.Data.IsDead &&
+    //            player.TryGetModifier<BlossomModifier>(out BlossomModifier m) &&
+    //            m.BlossomingValue >= BlossomModifier.RequiredBlossomValue
+    //        );
+    //}
 }
 public class ControlFlowerButton : CustomActionButton
 {
-    private bool resetTimerAfterOpeningMenu;
     protected override void OnClick()
     {
-        if (FloristControlState.ControlledPlayer != null)
-        {
-            PlayerControl.LocalPlayer.RpcStopFloristControl(FloristControlState.ControlledPlayer.PlayerId);
-            return;
-        }
-        resetTimerAfterOpeningMenu = true;
         var menu = ImprovedCustomPlayerMenu.CreateImproved();
 
         menu.ImprovedPlayerMenu(
@@ -68,36 +101,23 @@ public class ControlFlowerButton : CustomActionButton
             {
                 FloristControlState.FloristPlayer = PlayerControl.LocalPlayer;
                 FloristControlState.ControlledPlayer = player;
-                FloristControlState.ControlTimer = FloristControlState.ControlDuration;
 
                 player.RpcAddModifier<ControlledByFloristModifier>(PlayerControl.LocalPlayer);
+                Timer = OptionGroupSingleton<FloristOptions>.Instance.ControlDuration.Value;
+                EffectActive = true;
             },
             "#ce007b",
             ImprovedCustomPlayerMenu.EmptyIcon
             // "#ce007b",
             // Assets.JesterIcon.LoadAsset()
         );
+        Timer = 0;
     }
+
+    public override bool HasEffect => true;
 
     protected override void FixedUpdate(PlayerControl playerControl)
     {
-        if (FloristControlState.ShouldStartControlCooldown)
-        {
-            FloristControlState.ShouldStartControlCooldown = false;
-            Timer = OptionGroupSingleton<FloristOptions>.Instance.ControlCooldown.Value;
-        }
-
-        if (resetTimerAfterOpeningMenu)
-        {
-            resetTimerAfterOpeningMenu = false;
-            Timer = 0f;
-        }
-
-        if (Button == null)
-        {
-            return;
-        }
-
         bool shouldShow =
             (FloristControlState.ControlledPlayer != null || HasAnyControllablePlayer()) && 
             MeetingHud.Instance == null;
@@ -111,11 +131,12 @@ public class ControlFlowerButton : CustomActionButton
 
         if (FloristControlState.ControlledPlayer != null)
         {
-            Button.OverrideText("Stop " + Mathf.CeilToInt(FloristControlState.ControlTimer));
+            Button.OverrideText("Stop " + (int) Timer);
         }
         else
         {
             Button.OverrideText("Control");
+            EffectActive = false;
         }
     }
 
@@ -150,8 +171,7 @@ public class ControlFlowerButton : CustomActionButton
     public override string Name => "Control";
 
     public override float Cooldown => OptionGroupSingleton<FloristOptions>.Instance.ControlCooldown.Value;
-    // public override float Cooldown => 0;
-
+    
     public override LoadableAsset<Sprite> Sprite => Assets.PlaceHolder;
 }
 public class ControlledKillButton : CustomActionButton<PlayerControl>

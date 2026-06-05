@@ -2,6 +2,7 @@ using System.Collections;
 using System.Linq;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
+using MiraAPI.Networking;
 using MiraAPI.Utilities;
 using Stargazer.Components;
 using Stargazer.Components.Tasks;
@@ -373,44 +374,28 @@ public static class RPCHandler
         target.MyPhysics.body.velocity = velocity;
         target.MyPhysics.HandleAnimation(target.Data.IsDead);
     }
-
-    [MethodRpc((uint)RPC.StopFloristControl)]
-    public static void RpcStopFloristControl(this PlayerControl source, byte targetId)
-    {
-        var target = PlayerControlUtils.GetPlayerById(targetId);
-        if (target == null)
-        {
-            return;
-        }
-
-        if (target.HasModifier<ControlledByFloristModifier>())
-        {
-            target.RpcRemoveModifier<ControlledByFloristModifier>();
-        }
-
-        target.MyPhysics.body.velocity = Vector2.zero;
-    }
+    
     [MethodRpc((uint)RPC.SpawnFloristTrap)]
     public static void RpcSpawnFloristTrap(this PlayerControl source, uint id)
     {
         FloristRole.FlowerTypes type = (FloristRole.FlowerTypes)id;
 
-        GameObject obj;
-        PlayerDetectionBehaviour playerDetectionBehaviour;
+        GameObject obj = null;
+        PlayerDetectionBehaviour playerDetectionBehaviour = null;
+        bool fade = true;
         switch (type)
         {
             case FloristRole.FlowerTypes.TallGrass:
                 obj = UnityObject.Instantiate(Assets.FloristTallGrass.LoadAsset());
                 obj.transform.position = source.transform.position;
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.Radius = new(2, 1.5f);
                 playerDetectionBehaviour.OnEnter = control =>
                 {
-                    control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
                     control.AddModifier<SlowedDownModifier>();
                 };
                 playerDetectionBehaviour.OnExit = control =>
                 {
-                    control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white, Color.white.ToClearColor(), 0.4f));
                     control.RemoveModifier<SlowedDownModifier>();
                 };
                 break;
@@ -436,11 +421,9 @@ public static class RPCHandler
 
                 playerDetectionBehaviour.OnEnter = control =>
                 {
-                    control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
-
                     if (!control.HasModifier<BlossomModifier>())
                     {
-                        control.RpcAddModifier<BlossomModifier>();
+                        control.AddModifier<BlossomModifier>();
                     }
                 };
 
@@ -452,6 +435,53 @@ public static class RPCHandler
                     }
                 };
                 break;
+            case FloristRole.FlowerTypes.Thorns:
+                fade = false;
+                obj = UnityObject.Instantiate(Assets.FloristThorns.LoadAsset());
+                obj.GetComponent<SpriteRenderer>().enabled = false;
+                obj.transform.position = source.transform.position;
+                obj.transform.localScale = Vector3.one / 2;
+                var indicator = new GameObject("Indicator").AddComponent<SpriteRenderer>();
+                indicator.sprite = Assets.ThornsIndicator.LoadAsset();
+                indicator.transform.position = source.transform.position;
+                indicator.transform.localScale = Vector3.one / 2;
+                indicator.color = new(1, 1, 1, 0.3f);
+                playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.enabled = false;
+                source.StartCoroutine(Effects.ActionAfterDelay(1f, new System.Action(() => { playerDetectionBehaviour.enabled = true; })));
+                playerDetectionBehaviour.OnEnter = control =>
+                {
+                    control.StartCoroutine(Effects.ActionAfterDelay(0.3f, new System.Action(() =>
+                    {
+                        obj.GetComponent<SpriteRenderer>().enabled = true;
+                        indicator.color = new(1, 1, 1, 1f);
+                        if (Vector2.Distance(control.transform.position, source.transform.position) <= 0.2f)
+                        {
+                            control.CustomMurder(control, MurderResultFlags.Succeeded, showKillAnim:false);
+                        }
+                        source.StartCoroutine(Effects.ActionAfterDelay(0.7f, new System.Action(() => { obj.Destroy(); })));
+                    })));
+                };
+                break;
+            case FloristRole.FlowerTypes.Mushroom:
+                fade = false;
+                var mushroom = UnityObject.Instantiate(MapLoader.Fungle.GetComponentInChildren<Mushroom>());
+                mushroom.transform.position = source.transform.position;
+                mushroom.origPosition = source.transform.position;
+                mushroom.enabled = false;
+                source.StartCoroutine(Effects.ActionAfterDelay(1f, new System.Action(() => { mushroom.enabled = true; })));
+                break;
         }
+
+        if (playerDetectionBehaviour == null || obj == null || !fade) return;
+        playerDetectionBehaviour.OnEnter += control =>
+        {
+            control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
+
+        };
+        playerDetectionBehaviour.OnExit += control =>
+        {
+            control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white, Color.white.ToClearColor(), 0.4f));
+        };
     }
 }

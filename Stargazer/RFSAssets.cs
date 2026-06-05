@@ -82,6 +82,12 @@ public static class Assets
     public static LoadableResourceAsset ObserveButton { get; } = new("Stargazer.Resources.Abilities.ObserveButton.png");
     public static LoadableResourceAsset ActButton { get; } = new("Stargazer.Resources.Abilities.ActButton.png");
     public static LoadableResourceAsset Map { get; } = new("Stargazer.Resources.Objects.Map.png"); 
+    public static LoadableResourceAsset ThornsIndicator { get; } = new("Stargazer.Resources.Objects.ThornsIndicator.png"); 
+    public static LoadableResourceAsset PlantFlowersButton { get; } = new("Stargazer.Resources.Abilities.PlantFlowersButton.png"); 
+    public static LoadableResourceAsset PlantGrassButton { get; } = new("Stargazer.Resources.Abilities.PlantGrassButton.png");
+    public static LoadableResourceAsset PlantMushroomButton { get; } = new("Stargazer.Resources.Abilities.PlantMushroomButton.png"); 
+    public static LoadableResourceAsset FlowerTakeoverSprite { get; } = new("Stargazer.Resources.Objects.FlowerTakeover.png"); 
+    public static LoadableResourceAsset PlantThornsButton { get; } = new("Stargazer.Resources.Abilities.PlantThornsButton.png"); 
     public static LoadableResourceAsset XMark { get; } = new("Stargazer.Resources.Objects.XMark.png"); 
     public static LoadableResourceAsset MoleRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.mole.png");
     public static LoadableResourceAsset SilencerRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.silencer.png");
@@ -165,5 +171,7 @@ public static class Assets
     public static LoadableResourceAsset MechanicRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.mechanic.png");
     public static LoadableResourceAsset WildcardRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.wildcard.png");
     public static LoadableBundleAsset<GameObject> FloristTallGrass { get; } = new("FloristTallGrass.prefab", Bundle);
+    public static LoadableBundleAsset<GameObject> FloristThorns { get; } = new("FloristThorns.prefab", Bundle);
+    public static LoadableBundleAsset<GameObject> ControlledOverlay { get; } = new("FloristControlledCanvas.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> FloristFlowers { get; } = new("FloristFlowers.prefab", Bundle);
 }

@@ -1,7 +1,9 @@
 using System.Linq;
 using AmongUs.GameOptions;
 using HarmonyLib;
+using Reactor.Utilities;
 using Stargazer.Features.MainMenu;
+using Stargazer.Utilities;
 using UnityEngine;
 
 namespace Stargazer.Patches;
@@ -16,5 +18,6 @@ public class MainMenuPatches
     {
         RFSLogo.Create(__instance);
         ReworkedMainMenu.SetUp(__instance);
+        Coroutines.Start(MapLoader.LoadMaps());
     }
 }

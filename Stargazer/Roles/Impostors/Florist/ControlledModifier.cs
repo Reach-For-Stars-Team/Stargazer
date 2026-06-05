@@ -3,6 +3,9 @@ using AmongUs.GameOptions;
 using HarmonyLib;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
+using MiraAPI.Modifiers.Types;
+using MiraAPI.Utilities;
+using Reactor.Utilities.Extensions;
 using Stargazer.Networking;
 using UnityEngine;
 
@@ -12,21 +15,20 @@ public static class FloristControlState
 {
     public static PlayerControl FloristPlayer;
     public static PlayerControl ControlledPlayer;
-    public static bool ShouldStartControlCooldown;
-
-    public static float ControlDuration => OptionGroupSingleton<FloristOptions>.Instance.ControlDuration.Value;
-    public static float ControlTimer;
 
     public static MonoBehaviour PreviousCameraTarget;
 }
 
-public class ControlledByFloristModifier : BaseModifier
+public class ControlledByFloristModifier : TimedModifier
 {
     public override string ModifierName => "Controlled By Florist";
 
     public override bool HideOnUi => true;
+    public Sprite hatSprite;
 
     public PlayerControl FloristPlayer;
+    
+    private GameObject overlay;
 
     public ControlledByFloristModifier(PlayerControl source)
     {
@@ -37,13 +39,16 @@ public class ControlledByFloristModifier : BaseModifier
     {
         FloristControlState.FloristPlayer = FloristPlayer;
         FloristControlState.ControlledPlayer = Player;
-        FloristControlState.ControlTimer = FloristControlState.ControlDuration;
+        
+        hatSprite = Player.cosmetics.hat.FrontLayer.sprite;
+        Player.cosmetics.hat.FrontLayer.sprite = Assets.FlowerTakeoverSprite.LoadAsset();
 
         if (Player.AmOwner)
         {
             Player.moveable = false;
             Player.NetTransform.Halt();
             Player.MyPhysics.body.velocity = Vector2.zero;
+            overlay = UnityObject.Instantiate(Assets.ControlledOverlay.LoadAsset());
         }
 
         if (FloristPlayer != null && FloristPlayer.AmOwner)
@@ -51,6 +56,7 @@ public class ControlledByFloristModifier : BaseModifier
             // FloristPlayer.moveable = false;
             FloristPlayer.NetTransform.Halt();
             FloristPlayer.MyPhysics.body.velocity = Vector2.zero;
+            overlay = UnityObject.Instantiate(Assets.ControlledOverlay.LoadAsset());
 
             var follower = Camera.main.GetComponent<FollowerCamera>();
             if (follower != null)
@@ -60,27 +66,11 @@ public class ControlledByFloristModifier : BaseModifier
             }
         }
     }
-
-    public override void FixedUpdate()
-    {
-        base.FixedUpdate();
-
-        if (FloristPlayer == null || !FloristPlayer.AmOwner)
-        {
-            return;
-        }
-
-        FloristControlState.ControlTimer -= Time.fixedDeltaTime;
-
-        if (FloristControlState.ControlTimer <= 0f)
-        {
-            FloristControlState.ShouldStartControlCooldown = true;
-            FloristPlayer.RpcStopFloristControl(Player.PlayerId);
-        }
-    }
-
+    public override float Duration => OptionGroupSingleton<FloristOptions>.Instance.ControlDuration.Value;
     public override void OnDeactivate()
     {
+        Player.cosmetics.hat.FrontLayer.sprite = hatSprite;
+        if (overlay) overlay.Destroy();
         if (Player.AmOwner)
         {
             Player.moveable = true;
@@ -106,18 +96,29 @@ public class ControlledByFloristModifier : BaseModifier
             }
         }
 
-        if (Player.TryGetModifier<BlossomModifier>(out BlossomModifier blossom))
+        if (Player.TryGetModifier(out BlossomModifier blossom))
         {
-            blossom.ResetBlossom();
+            if (OptionGroupSingleton<FloristOptions>.Instance.ResetBlossomAfterControl.Value) blossom.ResetBlossom();
         }
 
         if (FloristControlState.ControlledPlayer == Player)
         {
             FloristControlState.ControlledPlayer = null;
             FloristControlState.FloristPlayer = null;
-            FloristControlState.ControlTimer = 0f;
             FloristControlState.PreviousCameraTarget = null;
         }
+    }
+
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        //if (FloristControlState.FloristPlayer.AmOwner)0000000000000000000000
+        
+        //{
+        //    var target = Player.GetClosestPlayer(false, 1.5f); //TODO Replace with kill distance opt...
+        //    HudManager.Instance.KillButton.SetTarget(target);
+        //}
+        //this will have to wait for xaine's pr to be merged... cool.
     }
 }
 
