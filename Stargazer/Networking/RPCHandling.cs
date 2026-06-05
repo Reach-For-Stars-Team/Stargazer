@@ -3,6 +3,8 @@ using System.Linq;
 using AmongUs.GameOptions;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
+using MiraAPI.Networking;
+using MiraAPI.Roles;
 using MiraAPI.Utilities;
 using Stargazer.Components;
 using Stargazer.Components.Tasks;
