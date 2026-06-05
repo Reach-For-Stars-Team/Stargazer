@@ -9,7 +9,7 @@ This is achieved via making roles that fit seamlessly into the core game loop, a
 # Features:
 - 21 New roles to spice up the game!
 - New colors to make you look more stylish!
-- Comsistent Artwork!
+- Consistent Artwork!
 - Game modes (Coming soon)
 >[!Tip]
 >If you wish to find people to play with, you can join the [Reach For Stars Discord Server](https://discord.gg/UPdfAn5Ue8)

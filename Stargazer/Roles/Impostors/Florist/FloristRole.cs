@@ -5,14 +5,14 @@ using UnityEngine;
 
 namespace Stargazer.Roles.Impostors.Florist;
 
-[MiraIgnore]
+// [MiraIgnore]
 public class FloristRole : ImpostorRole, ICustomRole
 {
     public string RoleName => "Florist";
 
-    public string RoleDescription => "throw new System.NotImplementedException()";
+    public string RoleDescription => "It's blooming season.";
 
-    public string RoleLongDescription => "throw new System.NotImplementedException()";
+    public string RoleLongDescription => "Plant various plants around the map, spread your flowers everywhere, and control players.";
 
     public Color RoleColor => Palette.ImpostorRoleRed;
 
@@ -22,9 +22,10 @@ public class FloristRole : ImpostorRole, ICustomRole
 
     public enum FlowerTypes
     {
-        TallGrass,
-        Flowers,
-        Thorns
+        TallGrass = 0,
+        Flowers = 1,
+        Thorns = 2,
+        Mushroom = 3
     }
 
     public static List<Color> FlowerColors = new([new (1f, 0f, 0.8f), 

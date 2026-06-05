@@ -30,7 +30,6 @@ public class SpyMinigame(IntPtr ptr) : Minigame(ptr)
         batterytext.transform.localPosition = new(0.05f, 0.09f, 0);
         GameObject closeGO = transform.FindChild("CloseBtn").gameObject; 
         CloseBtn = PassiveButtonUtils.CreatePassiveButton(closeGO, closeGO.transform.FindChild("Active").gameObject, closeGO.transform.FindChild("Inactive").gameObject, new(() => Close(true)));
-        HudManager.Instance.StartCoroutine(CoAnimateOpen());
         ControllerManager.Instance.OpenOverlayMenu("SpyMinigame", CloseBtn);
         SpyRole.Player.NetTransform.Halt();
     }
@@ -50,8 +49,7 @@ public class SpyMinigame(IntPtr ptr) : Minigame(ptr)
     
     public static void CreateAndOpen()
     {
-        var g = UnityObject.Instantiate(Assets.StalkMinigame.LoadAsset());
-        g.transform.parent = HudManager.Instance.transform;
+        var g = UnityObject.Instantiate(Assets.StalkMinigame.LoadAsset(), HudManager.Instance.transform, true);
         g.transform.localPosition = Vector3.zero;
         var s = g.AddComponent<SpyMinigame>();
         Instance = s;

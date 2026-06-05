@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Linq;
+using AmongUs.GameOptions;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
+using MiraAPI.Networking;
+using MiraAPI.Roles;
 using MiraAPI.Utilities;
 using Stargazer.Components;
 using Stargazer.Components.Tasks;
@@ -15,7 +18,9 @@ using Stargazer.Utilities;
 using Reactor.Networking.Attributes;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
+using Stargazer.Components.Minigames;
 using Stargazer.Roles.Impostors.Florist;
+using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
 using UnityEngine.ProBuilder;
 using Helpers = MiraAPI.Utilities.Helpers;
@@ -127,12 +132,6 @@ public static class RPCHandler
 
         line.gameObject.Destroy();
         yield break;
-    }
-
-    [MethodRpc((uint)RPC.SeekerScream)]
-    public static void RpcScream()
-    {
-        PlayerControl.LocalPlayer.transform.GetComponent<HnSImpostorScreamSfx>().LocalImpostorScream();
     }
 
     [MethodRpc((uint)RPC.ChangeBodyType)]
@@ -355,19 +354,41 @@ public static class RPCHandler
         btnTarget.enabled = false;
     }
     
+    [MethodRpc((uint)RPC.MoveFloristControlledPlayer)]
+    public static void RpcMoveFloristControlledPlayer(this PlayerControl source, byte targetId, float x, float y)
+    {
+        var target = PlayerControlUtils.GetPlayerById(targetId);
+        if (target == null || target.Data == null || target.Data.IsDead)
+        {
+            return;
+        }
+
+        if (!target.HasModifier<ControlledByFloristModifier>())
+        {
+            return;
+        }
+
+        Vector2 velocity = new Vector2(x, y);
+
+        target.MyPhysics.body.velocity = velocity;
+        target.MyPhysics.HandleAnimation(target.Data.IsDead);
+    }
+    
     [MethodRpc((uint)RPC.SpawnFloristTrap)]
     public static void RpcSpawnFloristTrap(this PlayerControl source, uint id)
     {
         FloristRole.FlowerTypes type = (FloristRole.FlowerTypes)id;
 
-        GameObject obj;
-        PlayerDetectionBehaviour playerDetectionBehaviour;
+        GameObject obj = null;
+        PlayerDetectionBehaviour playerDetectionBehaviour = null;
+        bool fade = true;
         switch (type)
         {
             case FloristRole.FlowerTypes.TallGrass:
                 obj = UnityObject.Instantiate(Assets.FloristTallGrass.LoadAsset());
                 obj.transform.position = source.transform.position;
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.Radius = new(2, 1.5f);
                 playerDetectionBehaviour.OnEnter = control =>
                 {
                     control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
@@ -382,8 +403,23 @@ public static class RPCHandler
             case FloristRole.FlowerTypes.Flowers:
                 obj = UnityObject.Instantiate(Assets.FloristFlowers.LoadAsset());
                 obj.transform.position = source.transform.position;
+
                 PlayerMaterial.SetColors(FloristRole.FlowerColors.Random(), obj.GetComponent<SpriteRenderer>());
+
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
+                // playerDetectionBehaviour.Size = new Vector2(2.7f, 1.5f);
+
+                playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
+                playerDetectionBehaviour.Radius = new Vector2(1.35f, 0.75f);
+
+                // DebugRadius.CreateCircle(
+                //     obj.transform,
+                //     playerDetectionBehaviour.LocalOffset,
+                //     playerDetectionBehaviour.Radius,
+                //     999
+                // );
+
                 playerDetectionBehaviour.OnEnter = control =>
                 {
                     control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
@@ -396,5 +432,38 @@ public static class RPCHandler
                 //};
                 break;
         }
+
+        if (playerDetectionBehaviour == null || obj == null || !fade) return;
+        playerDetectionBehaviour.OnEnter += control =>
+        {
+            control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white.ToClearColor(), Color.white, 1f));
+
+        };
+        playerDetectionBehaviour.OnExit += control =>
+        {
+            control.StartCoroutine(Effects.ColorFade(obj.GetComponent<SpriteRenderer>(), Color.white, Color.white.ToClearColor(), 0.4f));
+        };
+    }
+
+    [MethodRpc((uint)RPC.SwapRoles)]
+    public static void RpcSwapRoles(this PlayerControl source, PlayerControl target, uint roleId)
+    {
+        RoleTypes type = (RoleTypes)roleId;
+        if (target.Data.Role.Role == type)
+        {
+            var ogRole = target.Data.RoleType;
+            RoleManager.Instance.SetRole(target, (RoleTypes)RoleId.Get<RolelessRole>());
+            RoleManager.Instance.SetRole(source, type);
+        }
+        else
+        {
+            if (OptionGroupSingleton<RolelessOptions>.Instance.SuicideWhenMisguess) target.CustomMurder(source, MurderResultFlags.Succeeded, false, true, false, false, true);
+        }
+    }
+
+    [MethodRpc((uint)RPC.ShootPlayer)]
+    public static void RpcShootPlayer(this PlayerControl source, PlayerControl target, int bulletCount)
+    {
+        if (target.AmOwner) ShotMinigame.CreateAndOpen(bulletCount);
     }
 }

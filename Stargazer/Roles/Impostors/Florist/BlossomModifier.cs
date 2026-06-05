@@ -1,5 +1,5 @@
+using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
-using TMPro;
 using UnityEngine;
 
 namespace Stargazer.Roles.Impostors.Florist;
@@ -11,21 +11,31 @@ public class BlossomModifier : BaseModifier
     public override bool HideOnUi => true;
 
     public int BlossomingValue = 0;
-    private TextMeshPro BlossomText;
-    public override void OnActivate()
-    {
-        BlossomText = UnityObject.Instantiate(Player.cosmetics.nameText, Player.cosmetics.nameTextContainer.transform);
-        BlossomText.transform.position = Vector3.up;
-        BlossomText.text = "";
-    }
+
+    private float timer;
+
+    public static int RequiredBlossomValue => (int)OptionGroupSingleton<FloristOptions>.Instance.BlossomTime.Value;
 
     public void IncreaseBlossom()
     {
-        BlossomingValue++;
-        BlossomText.text = "";
-        for (int i = 30; i >= BlossomingValue; i += 30)
+        timer += Time.fixedDeltaTime;
+
+        if (timer < 1f)
         {
-            BlossomText.text += "✿";
+            return;
         }
+
+        timer = 0f;
+        BlossomingValue++;
+
+        if (BlossomingValue > RequiredBlossomValue)
+        {
+            BlossomingValue = RequiredBlossomValue;
+        }
+    }
+    public void ResetBlossom()
+    {
+        BlossomingValue = 0;
+        timer = 0f;
     }
 }
