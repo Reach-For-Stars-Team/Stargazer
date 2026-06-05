@@ -10,9 +10,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -476,7 +474,23 @@
       <workItem from="1780659963671" duration="789000" />
       <workItem from="1780660991549" duration="466000" />
       <workItem from="1780678415479" duration="48000" />
-      <workItem from="1780685088030" duration="9917000" />
+      <workItem from="1780685088030" duration="6196000" />
+    </task>
+    <task id="LOCAL-00003" summary="2.0 WIP">
+      <option name="closed" value="true" />
+      <created>1769862437968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769862437968</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Make TargetedPositionActionButton use [MiraIgnore] Attribute">
+      <option name="closed" value="true" />
+      <created>1769868373830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769868373830</updated>
     </task>
     <task id="LOCAL-00005" summary="Make TargetedPositionActionButton use [MiraIgnore] Attribute">
       <option name="closed" value="true" />
@@ -854,23 +868,7 @@
       <option name="project" value="LOCAL" />
       <updated>1780690781004</updated>
     </task>
-    <task id="LOCAL-00052" summary="Merge Mastermind role into dev branch">
-      <option name="closed" value="true" />
-      <created>1780692068872</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1780692068872</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Merge Mastermind role into dev branch">
-      <option name="closed" value="true" />
-      <created>1780694545635</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1780694545636</updated>
-    </task>
-    <option name="localTasksCounter" value="54" />
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -913,8 +911,7 @@
     <MESSAGE value="Achievements" />
     <MESSAGE value="Finish up florist" />
     <MESSAGE value="merge" />
-    <MESSAGE value="Merge Mastermind role into dev branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge Mastermind role into dev branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
