@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="307" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDOSqvlHM7jPWAi",
+        "number": 2
+      },
+      "lastSeen": 1780689020082
+    },
+    {
+      "id": {
+        "id": "PR_kwDOSqvlHM7jQcSW",
+        "number": 3
+      },
+      "lastSeen": 1780691985199
+    }
+  ]
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:reach-for-stars-team/stargazer.git&quot;,
+    &quot;accountId&quot;: &quot;528319d3-553d-4c46-acd6-c209cf0269d9&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/15/fddbd641/FollowerCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/25/383b50f5/Effects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/2f/990947f5/KillButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/32/a9045b62/PlayerTask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/55/aa9cc0d1/PlayerControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/72/dac4f58b/AmongUsClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/7f/eb1338dd/GameStartManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/ae/3c7c686d/NormalPlayerTask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/af/7f96e8ef/DeadBody.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/c2/bc0ca299/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/f8/07445a64/PlayerMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23b11d3246544909bee43724dfa45a9b29b800/ac/7547ba70/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23b11d3246544909bee43724dfa45a9b29b800/e2/fdbb54bc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6388fd7c8acd4326a1ae6b3f3a44466d74ba00/53/4dd3bc11/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/0b39d1b15a364571928d51e233ababe12d7000/1d/0da0fc4d/Assembly-CSharp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/681f3cbc7ebee3ec2d61b6ad1f440f94779a44339d5c43ffb8da49d026/LoadableResourceAsset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b2b1b3ef5467c48243c17bbd17b2087a64c2a83a197bf6910bf3a79387ff874/ICustomRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e41917b4beb5881b6b4e7a6d599d1c3cce4e2f5c9a957e65f3b8692424c42e2/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Patches/VentPatches.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/RFSAssets.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Observer/ObserveButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Observer/ObserverRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffRole.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Impostors/Cowboy/CowboyOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Utilities/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nuget.config" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;ff0099ff&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="374tOXzfw3rhcMz7dqxNP0A8oM4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "dev",
+    "git.auto.fetch.suggestion.counter": "3",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/pix/Downloads/Assembly-CSharp-2026.3.31.dll",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="" />
+      <created>1766174142470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766174142470</updated>
+      <workItem from="1766174145785" duration="790000" />
+      <workItem from="1766177883830" duration="1182000" />
+      <workItem from="1766183007813" duration="7099000" />
+      <workItem from="1766226915770" duration="2640000" />
+      <workItem from="1766233182855" duration="6624000" />
+      <workItem from="1766254368786" duration="1814000" />
+      <workItem from="1766258731735" duration="2688000" />
+      <workItem from="1766262525624" duration="2038000" />
+      <workItem from="1766265853057" duration="766000" />
+      <workItem from="1766268120310" duration="2768000" />
+      <workItem from="1766307662490" duration="5167000" />
+      <workItem from="1766320251565" duration="2109000" />
+      <workItem from="1766335051304" duration="804000" />
+      <workItem from="1766343123999" duration="591000" />
+      <workItem from="1766352205125" duration="1246000" />
+      <workItem from="1766355934861" duration="2112000" />
+      <workItem from="1766421622333" duration="3459000" />
+      <workItem from="1766426621496" duration="1693000" />
+      <workItem from="1766430234757" duration="5188000" />
+      <workItem from="1766491330519" duration="1330000" />
+      <workItem from="1766493358490" duration="200000" />
+      <workItem from="1766495567524" duration="376000" />
+      <workItem from="1766587958707" duration="770000" />
+      <workItem from="1766590893884" duration="2212000" />
+      <workItem from="1766599585548" duration="6305000" />
+      <workItem from="1766607832192" duration="182000" />
+      <workItem from="1766608708476" duration="5144000" />
+      <workItem from="1766617025772" duration="2094000" />
+      <workItem from="1766656431210" duration="774000" />
+      <workItem from="1766673414036" duration="2414000" />
+      <workItem from="1766678709237" duration="1173000" />
+      <workItem from="1766694848015" duration="576000" />
+      <workItem from="1766697787908" duration="64000" />
+      <workItem from="1766697952674" duration="500000" />
+      <workItem from="1766698895487" duration="506000" />
+      <workItem from="1766699617892" duration="1331000" />
+      <workItem from="1766742075063" duration="115000" />
+      <workItem from="1766745621781" duration="1736000" />
+      <workItem from="1766767802865" duration="5919000" />
+      <workItem from="1766778549577" duration="582000" />
+      <workItem from="1766780721068" duration="3625000" />
+      <workItem from="1766788712250" duration="1072000" />
+      <workItem from="1766827749217" duration="4197000" />
+      <workItem from="1766837617780" duration="1648000" />
+      <workItem from="1766841568039" duration="1241000" />
+      <workItem from="1766851658932" duration="564000" />
+      <workItem from="1766855325994" duration="1000" />
+      <workItem from="1766855803060" duration="3246000" />
+      <workItem from="1766869469128" duration="1450000" />
+      <workItem from="1766913314780" duration="764000" />
+      <workItem from="1766914356358" duration="6000" />
+      <workItem from="1766914420719" duration="1047000" />
+      <workItem from="1766937918224" duration="67000" />
+      <workItem from="1766939864705" duration="1711000" />
+      <workItem from="1766943165359" duration="10000" />
+      <workItem from="1766943724169" duration="8000" />
+      <workItem from="1766957857071" duration="4887000" />
+      <workItem from="1766965295405" duration="596000" />
+      <workItem from="1767001186280" duration="148000" />
+      <workItem from="1767023524248" duration="2007000" />
+      <workItem from="1767043114827" duration="5000" />
+      <workItem from="1767976131629" duration="1008000" />
+      <workItem from="1767983583485" duration="1692000" />
+      <workItem from="1767987302564" duration="903000" />
+      <workItem from="1768050504532" duration="9298000" />
+      <workItem from="1768254775951" duration="6000" />
+      <workItem from="1768254792162" duration="1383000" />
+      <workItem from="1768332745790" duration="5172000" />
+      <workItem from="1768422869571" duration="3219000" />
+      <workItem from="1768590993167" duration="3269000" />
+      <workItem from="1768597044833" duration="1219000" />
+      <workItem from="1768654320044" duration="6163000" />
+      <workItem from="1768670679912" duration="2283000" />
+      <workItem from="1768679874624" duration="1489000" />
+      <workItem from="1768760338570" duration="7645000" />
+      <workItem from="1768819010447" duration="161000" />
+      <workItem from="1768848032772" duration="929000" />
+      <workItem from="1768849782917" duration="185000" />
+      <workItem from="1768860004277" duration="1032000" />
+      <workItem from="1768927191473" duration="4187000" />
+      <workItem from="1769006962971" duration="2899000" />
+      <workItem from="1769100224444" duration="53000" />
+      <workItem from="1769107819004" duration="1570000" />
+      <workItem from="1769448850533" duration="9952000" />
+      <workItem from="1769698533742" duration="38000" />
+      <workItem from="1769698682257" duration="1534000" />
+      <workItem from="1769783062596" duration="353000" />
+      <workItem from="1769802782787" duration="8983000" />
+      <workItem from="1769874733804" duration="664000" />
+      <workItem from="1770457110430" duration="74000" />
+      <workItem from="1770663199750" duration="15000" />
+      <workItem from="1770749128791" duration="6000" />
+      <workItem from="1770749174544" duration="9000" />
+      <workItem from="1771261013307" duration="2354000" />
+      <workItem from="1771263469346" duration="1927000" />
+      <workItem from="1771347577099" duration="415000" />
+      <workItem from="1771509452091" duration="56000" />
+      <workItem from="1771539341561" duration="851000" />
+      <workItem from="1771540785183" duration="2152000" />
+      <workItem from="1771599092117" duration="3132000" />
+      <workItem from="1771609161899" duration="4843000" />
+      <workItem from="1771623569458" duration="2354000" />
+      <workItem from="1777218458519" duration="631000" />
+      <workItem from="1777237603485" duration="458000" />
+      <workItem from="1777464327538" duration="3536000" />
+      <workItem from="1777831293986" duration="1536000" />
+      <workItem from="1777898406403" duration="936000" />
+      <workItem from="1778678123706" duration="652000" />
+      <workItem from="1778683032960" duration="6513000" />
+      <workItem from="1778763385013" duration="543000" />
+      <workItem from="1778765000338" duration="4717000" />
+      <workItem from="1778770339094" duration="3252000" />
+      <workItem from="1778797222323" duration="1417000" />
+      <workItem from="1778800066124" duration="2191000" />
+      <workItem from="1778883269728" duration="135000" />
+      <workItem from="1778883426450" duration="997000" />
+      <workItem from="1778886485750" duration="35000" />
+      <workItem from="1778923270654" duration="277000" />
+      <workItem from="1778924431054" duration="3067000" />
+      <workItem from="1778957291344" duration="1525000" />
+      <workItem from="1778966515906" duration="642000" />
+      <workItem from="1778967228968" duration="404000" />
+      <workItem from="1778969535440" duration="1835000" />
+      <workItem from="1778972503730" duration="4846000" />
+      <workItem from="1779014450207" duration="1122000" />
+      <workItem from="1779016945787" duration="2968000" />
+      <workItem from="1779032310240" duration="1107000" />
+      <workItem from="1779034852185" duration="7395000" />
+      <workItem from="1779050164465" duration="5620000" />
+      <workItem from="1779058285506" duration="1383000" />
+      <workItem from="1779098658625" duration="311000" />
+      <workItem from="1779102106305" duration="850000" />
+      <workItem from="1779104161640" duration="2710000" />
+      <workItem from="1779110452754" duration="897000" />
+      <workItem from="1779112469230" duration="5880000" />
+      <workItem from="1779146457726" duration="4103000" />
+      <workItem from="1779189513436" duration="2373000" />
+      <workItem from="1779194369931" duration="351000" />
+      <workItem from="1779202397482" duration="68000" />
+      <workItem from="1779268968768" duration="1654000" />
+      <workItem from="1779271651417" duration="267000" />
+      <workItem from="1779272503572" duration="1106000" />
+      <workItem from="1779281122568" duration="514000" />
+      <workItem from="1779289876139" duration="1472000" />
+      <workItem from="1779294841234" duration="1118000" />
+      <workItem from="1779296344443" duration="2781000" />
+      <workItem from="1779300043538" duration="1217000" />
+      <workItem from="1779301429040" duration="126000" />
+      <workItem from="1779301736336" duration="332000" />
+      <workItem from="1779302182311" duration="87000" />
+      <workItem from="1779302405501" duration="303000" />
+      <workItem from="1779306126456" duration="47000" />
+      <workItem from="1779306768886" duration="1807000" />
+      <workItem from="1779318084260" duration="127000" />
+      <workItem from="1779319340051" duration="812000" />
+      <workItem from="1779321050231" duration="100000" />
+      <workItem from="1779360926258" duration="2426000" />
+      <workItem from="1779364156490" duration="3138000" />
+      <workItem from="1779368490276" duration="478000" />
+      <workItem from="1779369411525" duration="318000" />
+      <workItem from="1779370244996" duration="191000" />
+      <workItem from="1779384060792" duration="1768000" />
+      <workItem from="1779396119779" duration="6619000" />
+      <workItem from="1779404815379" duration="102000" />
+      <workItem from="1779405104790" duration="250000" />
+      <workItem from="1779405620935" duration="2271000" />
+      <workItem from="1779441311229" duration="341000" />
+      <workItem from="1779444443867" duration="494000" />
+      <workItem from="1779447954891" duration="28000" />
+      <workItem from="1779455680625" duration="12000" />
+      <workItem from="1779458759720" duration="873000" />
+      <workItem from="1779466628747" duration="3012000" />
+      <workItem from="1779470018826" duration="7591000" />
+      <workItem from="1779481262078" duration="72000" />
+      <workItem from="1779481628334" duration="1411000" />
+      <workItem from="1779494229078" duration="378000" />
+      <workItem from="1779534027373" duration="91000" />
+      <workItem from="1779534540448" duration="240000" />
+      <workItem from="1779536585741" duration="17000" />
+      <workItem from="1779539527906" duration="278000" />
+      <workItem from="1779540272521" duration="2477000" />
+      <workItem from="1779548032298" duration="450000" />
+      <workItem from="1779548601056" duration="2000" />
+      <workItem from="1779549009793" duration="4224000" />
+      <workItem from="1779553935960" duration="153000" />
+      <workItem from="1779554370627" duration="28000" />
+      <workItem from="1779554656644" duration="1450000" />
+      <workItem from="1779560653698" duration="1051000" />
+      <workItem from="1779562495185" duration="4143000" />
+      <workItem from="1779567977852" duration="2396000" />
+      <workItem from="1779604269573" duration="23000" />
+      <workItem from="1779606810411" duration="495000" />
+      <workItem from="1779607672017" duration="522000" />
+      <workItem from="1779616534671" duration="1821000" />
+      <workItem from="1779619406475" duration="1267000" />
+      <workItem from="1779621457989" duration="102000" />
+      <workItem from="1779621872968" duration="6740000" />
+      <workItem from="1779633523587" duration="64000" />
+      <workItem from="1779634141315" duration="424000" />
+      <workItem from="1779635978165" duration="150000" />
+      <workItem from="1779636430865" duration="1440000" />
+      <workItem from="1779638297265" duration="954000" />
+      <workItem from="1779660750948" duration="350000" />
+      <workItem from="1779662141085" duration="1892000" />
+      <workItem from="1779703916306" duration="5838000" />
+      <workItem from="1779730773982" duration="205000" />
+      <workItem from="1779739219063" duration="904000" />
+      <workItem from="1779747343578" duration="2976000" />
+      <workItem from="1779751012249" duration="116000" />
+      <workItem from="1779752027866" duration="556000" />
+      <workItem from="1779757369241" duration="146000" />
+      <workItem from="1779791429319" duration="3580000" />
+      <workItem from="1779808932063" duration="23000" />
+      <workItem from="1779891661433" duration="81000" />
+      <workItem from="1779899481447" duration="1038000" />
+      <workItem from="1779902080577" duration="2100000" />
+      <workItem from="1779906751387" duration="1229000" />
+      <workItem from="1779908424924" duration="3785000" />
+      <workItem from="1779912998811" duration="333000" />
+      <workItem from="1779913564299" duration="1563000" />
+      <workItem from="1779919896942" duration="442000" />
+      <workItem from="1779920614876" duration="671000" />
+      <workItem from="1779971211421" duration="861000" />
+      <workItem from="1779974784456" duration="3405000" />
+      <workItem from="1779983627586" duration="2036000" />
+      <workItem from="1779986041996" duration="599000" />
+      <workItem from="1779987034274" duration="401000" />
+      <workItem from="1779989862445" duration="1991000" />
+      <workItem from="1779992357840" duration="1544000" />
+      <workItem from="1779994063373" duration="3440000" />
+      <workItem from="1780003324156" duration="8517000" />
+      <workItem from="1780052701472" duration="22000" />
+      <workItem from="1780133184075" duration="1541000" />
+      <workItem from="1780134886311" duration="230000" />
+      <workItem from="1780136538954" duration="2463000" />
+      <workItem from="1780139412112" duration="2009000" />
+      <workItem from="1780148055723" duration="435000" />
+      <workItem from="1780150164150" duration="1003000" />
+      <workItem from="1780167985906" duration="489000" />
+      <workItem from="1780169563609" duration="585000" />
+      <workItem from="1780172047400" duration="741000" />
+      <workItem from="1780182615317" duration="327000" />
+      <workItem from="1780183343765" duration="1756000" />
+      <workItem from="1780222397109" duration="107000" />
+      <workItem from="1780223075469" duration="106000" />
+      <workItem from="1780227444570" duration="53000" />
+      <workItem from="1780227657634" duration="569000" />
+      <workItem from="1780248934969" duration="237000" />
+      <workItem from="1780261609803" duration="2970000" />
+      <workItem from="1780266142328" duration="63000" />
+      <workItem from="1780266351558" duration="338000" />
+      <workItem from="1780266814748" duration="355000" />
+      <workItem from="1780267889071" duration="179000" />
+      <workItem from="1780268295093" duration="294000" />
+      <workItem from="1780268844032" duration="167000" />
+      <workItem from="1780269995440" duration="42000" />
+      <workItem from="1780303057114" duration="51000" />
+      <workItem from="1780305793931" duration="233000" />
+      <workItem from="1780327205486" duration="239000" />
+      <workItem from="1780328830627" duration="103000" />
+      <workItem from="1780329146423" duration="9000" />
+      <workItem from="1780329498065" duration="891000" />
+      <workItem from="1780334464470" duration="407000" />
+      <workItem from="1780335238170" duration="32000" />
+      <workItem from="1780335626144" duration="670000" />
+      <workItem from="1780342286548" duration="1698000" />
+      <workItem from="1780347716542" duration="951000" />
+      <workItem from="1780348793130" duration="85000" />
+      <workItem from="1780350089903" duration="1918000" />
+      <workItem from="1780352827466" duration="816000" />
+      <workItem from="1780395166577" duration="1166000" />
+      <workItem from="1780399111110" duration="97000" />
+      <workItem from="1780399794247" duration="16000" />
+      <workItem from="1780403505532" duration="230000" />
+      <workItem from="1780404238954" duration="14000" />
+      <workItem from="1780404559020" duration="94000" />
+      <workItem from="1780409037647" duration="22000" />
+      <workItem from="1780409428603" duration="61000" />
+      <workItem from="1780417532910" duration="283000" />
+      <workItem from="1780418014214" duration="4379000" />
+      <workItem from="1780423155851" duration="297000" />
+      <workItem from="1780423813365" duration="1178000" />
+      <workItem from="1780425834978" duration="74000" />
+      <workItem from="1780426176381" duration="112000" />
+      <workItem from="1780426456845" duration="135000" />
+      <workItem from="1780427983690" duration="460000" />
+      <workItem from="1780428777114" duration="26000" />
+      <workItem from="1780434091578" duration="239000" />
+      <workItem from="1780436554732" duration="28000" />
+      <workItem from="1780436743060" duration="191000" />
+      <workItem from="1780437290162" duration="882000" />
+      <workItem from="1780438619252" duration="787000" />
+      <workItem from="1780468706494" duration="92000" />
+      <workItem from="1780469621459" duration="165000" />
+      <workItem from="1780481250715" duration="6000" />
+      <workItem from="1780482557352" duration="554000" />
+      <workItem from="1780483563467" duration="359000" />
+      <workItem from="1780572766567" duration="53000" />
+      <workItem from="1780580401615" duration="318000" />
+      <workItem from="1780581562324" duration="509000" />
+      <workItem from="1780586054844" duration="2291000" />
+      <workItem from="1780589964322" duration="90000" />
+      <workItem from="1780591748918" duration="432000" />
+      <workItem from="1780594307093" duration="2456000" />
+      <workItem from="1780603774403" duration="165000" />
+      <workItem from="1780603999613" duration="62000" />
+      <workItem from="1780604724542" duration="460000" />
+      <workItem from="1780605395052" duration="49000" />
+      <workItem from="1780606323193" duration="73000" />
+      <workItem from="1780606981453" duration="189000" />
+      <workItem from="1780608892328" duration="4090000" />
+      <workItem from="1780654339171" duration="566000" />
+      <workItem from="1780655267798" duration="127000" />
+      <workItem from="1780659963671" duration="789000" />
+      <workItem from="1780660991549" duration="466000" />
+      <workItem from="1780678415479" duration="48000" />
+      <workItem from="1780685088030" duration="9917000" />
+    </task>
+    <task id="LOCAL-00005" summary="Make TargetedPositionActionButton use [MiraIgnore] Attribute">
+      <option name="closed" value="true" />
+      <created>1769868563652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769868563652</updated>
+    </task>
+    <task id="LOCAL-00006" summary="WIP Archer Role">
+      <option name="closed" value="true" />
+      <created>1770457966512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770457966513</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ninja Role &amp; Framer Role">
+      <option name="closed" value="true" />
+      <created>1771624867124</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1771624867124</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ninja Role &amp; Framer Role">
+      <option name="closed" value="true" />
+      <created>1771625769386</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1771625769386</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973191213</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973191214</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973223563</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973223563</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973437710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973437710</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973469590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973469590</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973584414</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973584414</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973775729</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973775729</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973941451</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973941451</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy">
+      <option name="closed" value="true" />
+      <created>1778973960731</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1778973960731</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Unity Project + Experimental logic for targeted pos buttons on android + Observer Role + New Button sprites">
+      <option name="closed" value="true" />
+      <created>1779060160491</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1779060160491</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779562831077</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779562831081</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779562860809</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1779562860809</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779562906066</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1779562906066</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779563077424</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1779563077424</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779564316072</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1779564316073</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Bugfixes and new assets">
+      <option name="closed" value="true" />
+      <created>1779983836955</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1779983836955</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1780004070667</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1780004070668</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1780004313482</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1780004313482</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1780004910490</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1780004910490</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1780005114089</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1780005114089</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1780006015151</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006015151</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1780006231212</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006231212</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1780006517412</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006517412</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1780006591484</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006591484</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Push patch 1">
+      <option name="closed" value="true" />
+      <created>1780006840327</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006840327</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Push patch 1">
+      <option name="closed" value="true" />
+      <created>1780006893513</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006893513</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Push patch 1">
+      <option name="closed" value="true" />
+      <created>1780006990604</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1780006990604</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Push patch 1">
+      <option name="closed" value="true" />
+      <created>1780007003105</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1780007003105</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Push patch 1">
+      <option name="closed" value="true" />
+      <created>1780007202417</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1780007202417</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1780007424463</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1780007424463</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1780007532990</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1780007532990</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Patch 2">
+      <option name="closed" value="true" />
+      <created>1780008750839</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1780008750839</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Patch 2">
+      <option name="closed" value="true" />
+      <created>1780008856963</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1780008856963</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1780008967590</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1780008967590</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1780009564127</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1780009564127</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Patch 3">
+      <option name="closed" value="true" />
+      <created>1780009804783</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1780009804784</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add gitignore for unity project">
+      <option name="closed" value="true" />
+      <created>1780010070204</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1780010070204</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add gitignore for unity project">
+      <option name="closed" value="true" />
+      <created>1780011309847</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1780011309847</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add gitignore for unity project">
+      <option name="closed" value="true" />
+      <created>1780011394989</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1780011394989</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Roleless role">
+      <option name="closed" value="true" />
+      <created>1780183455132</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1780183455132</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Fixes + Sheriff Role">
+      <option name="closed" value="true" />
+      <created>1780342531914</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1780342531914</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Achievements">
+      <option name="closed" value="true" />
+      <created>1780351070869</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1780351070870</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Finish up florist">
+      <option name="closed" value="true" />
+      <created>1780688124958</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1780688124959</updated>
+    </task>
+    <task id="LOCAL-00051" summary="merge">
+      <option name="closed" value="true" />
+      <created>1780690781004</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1780690781004</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Merge Mastermind role into dev branch">
+      <option name="closed" value="true" />
+      <created>1780692068872</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1780692068872</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Merge Mastermind role into dev branch">
+      <option name="closed" value="true" />
+      <created>1780694545635</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1780694545636</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="2.0 WIP" />
+    <MESSAGE value="Make TargetedPositionActionButton use [MiraIgnore] Attribute" />
+    <MESSAGE value="WIP Archer Role" />
+    <MESSAGE value="Ninja Role &amp; Framer Role" />
+    <MESSAGE value="Wildcard Role, Role Icons next to player names, better rope animation for Cowboy" />
+    <MESSAGE value="Unity Project + Experimental logic for targeted pos buttons on android + Observer Role + New Button sprites" />
+    <MESSAGE value="Bugfixes and new assets" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Push patch 1" />
+    <MESSAGE value="Patch 2" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="Patch 3" />
+    <MESSAGE value="Add gitignore for unity project" />
+    <MESSAGE value="Roleless role" />
+    <MESSAGE value="Fixes + Sheriff Role" />
+    <MESSAGE value="Achievements" />
+    <MESSAGE value="Finish up florist" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="Merge Mastermind role into dev branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge Mastermind role into dev branch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

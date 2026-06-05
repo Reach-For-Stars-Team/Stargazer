@@ -1,0 +1,17 @@
+Index: Stargazer/Roles/Impostors/Florist/FloristOptions.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using MiraAPI.GameOptions;\r\nusing MiraAPI.GameOptions.OptionTypes;\r\nusing MiraAPI.Utilities;\r\n\r\nnamespace Stargazer.Roles.Impostors.Florist;\r\n\r\npublic class FloristOptions : AbstractOptionGroup<FloristRole>\r\n{\r\n    public override string GroupName => \"Florist Options\";\r\n\r\n    public ModdedNumberOption PlantCooldown { get; } =\r\n        new ModdedNumberOption(\"Plant Cooldown\", 30, 5, 90, 5, MiraNumberSuffixes.Seconds);\r\n\r\n    public ModdedNumberOption ControlCooldown { get; } =\r\n        new ModdedNumberOption(\"Control Cooldown\", 10, 5, 30, 5, MiraNumberSuffixes.Seconds);\r\n        \r\n    public ModdedNumberOption ControlDuration { get; } =\r\n        new ModdedNumberOption(\"Control Duration\", 10, 5, 30, 5, MiraNumberSuffixes.Seconds);\r\n\r\n    public ModdedNumberOption BlossomTime { get; } =\r\n        new ModdedNumberOption(\"Blossom or something idk\", 30, 5, 60, 5, MiraNumberSuffixes.Seconds);\r\n\r\n}
+===================================================================
+diff --git a/Stargazer/Roles/Impostors/Florist/FloristOptions.cs b/Stargazer/Roles/Impostors/Florist/FloristOptions.cs
+--- a/Stargazer/Roles/Impostors/Florist/FloristOptions.cs	(revision d901c0c5af477d5fb8447542666ed59e86cf780a)
++++ b/Stargazer/Roles/Impostors/Florist/FloristOptions.cs	(date 1780395241370)
+@@ -18,6 +18,5 @@
+         new ModdedNumberOption("Control Duration", 10, 5, 30, 5, MiraNumberSuffixes.Seconds);
+ 
+     public ModdedNumberOption BlossomTime { get; } =
+-        new ModdedNumberOption("Blossom or something idk", 30, 5, 60, 5, MiraNumberSuffixes.Seconds);
+-
++        new ModdedNumberOption("Blossoming Time before being able to be controlled.", 3, 1, 5, 1, MiraNumberSuffixes.Seconds);
+ }
+\ No newline at end of file
