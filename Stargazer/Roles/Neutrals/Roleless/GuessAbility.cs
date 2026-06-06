@@ -39,5 +39,5 @@ public class GuessAbility : CustomActionButton
 
     public override int MaxUses => OptionGroupSingleton<RolelessOptions>.Instance.AbilityUses;
 
-    public override LoadableAsset<Sprite> Sprite => Assets.PlaceHolder;
+    public override LoadableAsset<Sprite> Sprite => Assets.GuessButton;
 }

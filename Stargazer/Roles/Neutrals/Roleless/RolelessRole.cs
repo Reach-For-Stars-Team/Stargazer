@@ -16,6 +16,6 @@ public class RolelessRole : CrewmateRole, INeutralRole
     
     public CustomRoleConfiguration Configuration => new(this)
     {
-        Icon = Assets.PyromaniacRoleIcon
+        Icon = Assets.GuessButton
     };
 }

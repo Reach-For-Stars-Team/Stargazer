@@ -43,28 +43,30 @@ public class RoleIconBehaviour(IntPtr ptr) : MonoBehaviour(ptr)
     }
 
     [RegisterEvent]
-    public static void OnSetRole(SetRoleEvent e)
+public static void OnSetRole(SetRoleEvent e)
+{
+    e.Player.StartCoroutine(Effects.ActionAfterDelay(0.01f, new System.Action(() =>
     {
-        e.Player.StartCoroutine(Effects.ActionAfterDelay(0.01f, new System.Action(() =>
-        {
-            var icon = GetRoleIconBehaviour(e.Player);
-            if (icon == null) return;
-            if (!GetRoleIcon(e.Player.Data.Role, out Sprite sprite)) return;
-            icon.myRenderer.sprite = sprite;
+        var icon = GetRoleIconBehaviour(e.Player);
+        if (icon == null) return;
+
+        GetRoleIcon(e.Player.Data.Role, out Sprite sprite);
+        icon.myRenderer.sprite = sprite;
+        if (sprite != null)
             icon.transform.localScale = GetRoleIconScale(sprite);
-        })));
-    }
+    })));
+}
     
     public static bool GetRoleIcon(RoleBehaviour role, out Sprite sprite)
     {
         if (role is ICustomRole custom)
         {
             sprite = custom.Configuration.Icon?.LoadAsset();
-            return sprite;
+            return sprite != null;
         }
 
         sprite = role.RoleIconSolid;
-        return sprite;
+        return sprite != null;
     }
     
     private static Vector3 GetRoleIconScale(Sprite icon)

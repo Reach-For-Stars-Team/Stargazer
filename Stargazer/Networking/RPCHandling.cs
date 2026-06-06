@@ -20,6 +20,7 @@ using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using Stargazer.Components.Minigames;
 using Stargazer.Roles.Impostors.Florist;
+using Stargazer.Roles.Impostors.Mastermind;
 using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
 using UnityEngine.ProBuilder;
@@ -465,5 +466,24 @@ public static class RPCHandler
     public static void RpcShootPlayer(this PlayerControl source, PlayerControl target, int bulletCount)
     {
         if (target.AmOwner) ShotMinigame.CreateAndOpen(bulletCount);
+    }
+    
+    [MethodRpc((uint)RPC.BeginRecruiting)]
+    public static void RpcBeginRecruiting(this PlayerControl source, PlayerControl target)
+    {
+        var interaction = new RecruitingInteraction(source, target);
+        if (source.AmOwner || target.AmOwner)
+        {
+            RecruiterMinigame.CreateAndShow(interaction);
+        }
+    }
+    [MethodRpc((uint)RPC.UpdateRecruitInteraction)]
+    public static void RpcUpdateRecruitingInteraction(this PlayerControl source, uint interactionId, uint choice)
+    {
+        var interaction = RecruitingInteraction.Interactions.Find(x => x.id == interactionId);
+        if (interaction == null)  return;
+
+        var choiceType = (ChoiceTypes) choice;
+        interaction.Update(source, choiceType);
     }
 }

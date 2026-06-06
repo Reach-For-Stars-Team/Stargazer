@@ -45,8 +45,6 @@ public class ActModifier(PlayerControl Source) : GameModifier
                 Player.cosmetics.SetNameColor(Palette.ImpostorRed);
                 _NamePercentage.text = "Impostor";
                 _NamePercentage.color = Palette.ImpostorRed;
-                Player.MyPhysics.SetBodyType(PlayerBodyTypes.Seeker);
-                SoundManager.Instance.PlaySound(Player.MyPhysics.ImpostorDiscoveredSound, false);
             }
             else if (!Player.Data.Role.IsImpostor) 
             {

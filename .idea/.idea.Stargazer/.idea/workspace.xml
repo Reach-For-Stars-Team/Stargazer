@@ -10,14 +10,42 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="" />
+    <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitingInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-android.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-win.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-win.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Actor/ActModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Actor/ActModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitedModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitedModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/GuessAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/GuessAbility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/RolelessRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/RolelessRole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/ref/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/ref/Stargazer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/refint/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/refint/Stargazer.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="307" />
+    <option name="cachedIndexableFilesCount" value="461" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -27,27 +55,27 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOSqvlHM7jPWAi",
-        "number": 2
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOSqvlHM7jPWAi&quot;,
+        &quot;number&quot;: 2
       },
-      "lastSeen": 1780689020082
+      &quot;lastSeen&quot;: 1780689020082
     },
     {
-      "id": {
-        "id": "PR_kwDOSqvlHM7jQcSW",
-        "number": 3
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOSqvlHM7jQcSW&quot;,
+        &quot;number&quot;: 3
       },
-      "lastSeen": 1780691985199
+      &quot;lastSeen&quot;: 1780691985199
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:reach-for-stars-team/stargazer.git&quot;,
@@ -65,10 +93,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/ae/3c7c686d/NormalPlayerTask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/af/7f96e8ef/DeadBody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/c2/bc0ca299/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/ce/33aa4cfe/LobbyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b39d1b15a364571928d51e233ababe12d7000/f8/07445a64/PlayerMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23b11d3246544909bee43724dfa45a9b29b800/ac/7547ba70/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23b11d3246544909bee43724dfa45a9b29b800/e2/fdbb54bc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6388fd7c8acd4326a1ae6b3f3a44466d74ba00/0c/523c8c4a/Effects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6388fd7c8acd4326a1ae6b3f3a44466d74ba00/53/4dd3bc11/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/76/f3d1998c/OptionsConsole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/0b39d1b15a364571928d51e233ababe12d7000/1d/0da0fc4d/Assembly-CSharp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/681f3cbc7ebee3ec2d61b6ad1f440f94779a44339d5c43ffb8da49d026/LoadableResourceAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b2b1b3ef5467c48243c17bbd17b2087a64c2a83a197bf6910bf3a79387ff874/ICustomRole.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,10 +107,10 @@
     <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Patches/VentPatches.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Stargazer/RFSAssets.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/RFSAssets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Observer/ObserveButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Observer/ObserverRole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffOptions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -87,7 +118,7 @@
     <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Impostors/Cowboy/CowboyOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristRole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Utilities/MapLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/nuget.config" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -107,35 +138,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev",
-    "git.auto.fetch.suggestion.counter": "3",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/pix/Downloads/Assembly-CSharp-2026.3.31.dll",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;3&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/pix/Downloads/Assembly-CSharp-2026.6.5.dll&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
@@ -475,6 +506,26 @@
       <workItem from="1780660991549" duration="466000" />
       <workItem from="1780678415479" duration="48000" />
       <workItem from="1780685088030" duration="6196000" />
+      <workItem from="1780703390653" duration="21000" />
+      <workItem from="1780703525432" duration="860000" />
+      <workItem from="1780705746799" duration="355000" />
+      <workItem from="1780740610270" duration="39000" />
+      <workItem from="1780748478240" duration="32000" />
+      <workItem from="1780756246136" duration="165000" />
+      <workItem from="1780763020605" duration="2581000" />
+      <workItem from="1780765799430" duration="72000" />
+      <workItem from="1780766037861" duration="237000" />
+      <workItem from="1780766636535" duration="78000" />
+      <workItem from="1780767313959" duration="197000" />
+      <workItem from="1780767825757" duration="660000" />
+      <workItem from="1780770015180" duration="22000" />
+      <workItem from="1780770064716" duration="130000" />
+      <workItem from="1780770359128" duration="419000" />
+      <workItem from="1780779426518" duration="201000" />
+      <workItem from="1780780140773" duration="11000" />
+      <workItem from="1780781561557" duration="2011000" />
+      <workItem from="1780787500879" duration="784000" />
+      <workItem from="1780788569513" duration="770000" />
     </task>
     <task id="LOCAL-00003" summary="2.0 WIP">
       <option name="closed" value="true" />

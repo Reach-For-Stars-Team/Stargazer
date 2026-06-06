@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_6_6_26,_12_41 AM_[Changes]1" date="1780702887357" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_6_26,_12_41 AM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 6/6/26, 12:41 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/bin/Release/net6.0/Stargazer.pdb" />
+    <option name="AFTER_PATH" value="Stargazer/bin/Release/net6.0/Stargazer.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_6_26,_12_41 AM_[Changes]1/Stargazer.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/obj/Release/net6.0/refint/Stargazer.dll" />
+    <option name="AFTER_PATH" value="Stargazer/obj/Release/net6.0/refint/Stargazer.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_6_26,_12_41 AM_[Changes]1/Stargazer.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_6_26,_12_41 AM_[Changes]1/Stargazer.AssemblyInfoInputs.cache" />
+  </binary>
+</changelist>
