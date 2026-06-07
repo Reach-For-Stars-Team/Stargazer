@@ -11,28 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitingInteraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Components/RoleIconBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Features/MainMenu/ReworkedMainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-android.bundle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-win.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-win.bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Actor/ActModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Actor/ActModifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitedModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/RecruitedModifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/GuessAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/GuessAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/RolelessRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Neutrals/Roleless/RolelessRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" afterDir="false" />
@@ -45,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="461" />
+    <option name="cachedIndexableFilesCount" value="462" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -526,14 +510,9 @@
       <workItem from="1780781561557" duration="2011000" />
       <workItem from="1780787500879" duration="784000" />
       <workItem from="1780788569513" duration="770000" />
-    </task>
-    <task id="LOCAL-00003" summary="2.0 WIP">
-      <option name="closed" value="true" />
-      <created>1769862437968</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769862437968</updated>
+      <workItem from="1780789491962" duration="111000" />
+      <workItem from="1780846117712" duration="109000" />
+      <workItem from="1780852891744" duration="621000" />
     </task>
     <task id="LOCAL-00004" summary="Make TargetedPositionActionButton use [MiraIgnore] Attribute">
       <option name="closed" value="true" />
@@ -919,7 +898,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780690781004</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Rock Paper Scissors">
+      <option name="closed" value="true" />
+      <created>1780789597895</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1780789597896</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -962,7 +949,8 @@
     <MESSAGE value="Achievements" />
     <MESSAGE value="Finish up florist" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="Rock Paper Scissors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rock Paper Scissors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

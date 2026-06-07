@@ -73,6 +73,11 @@ public class RecruiterMinigame(IntPtr ptr) : Minigame(ptr)
     {
         if (!Enum.TryParse(name, out ChoiceTypes choice)) return;
         PlayerControl.LocalPlayer.RpcUpdateRecruitingInteraction(interaction.id, (uint) choice);
+
+        foreach (var btn in buttons)
+        {
+            btn.gameObject.SetActive(false);
+        }
     }
 
     public static void CreateAndShow(RecruitingInteraction interaction)
