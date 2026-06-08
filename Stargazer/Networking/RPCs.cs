@@ -39,5 +39,7 @@ public enum RPC : uint
     SpawnFloristTrap = 16,
     MoveFloristControlledPlayer = 17,
     ForceMurder = 18,
-    ShootPlayer = 19
+    ShootPlayer = 19,
+    BeginRecruiting = 20,
+    UpdateRecruitInteraction = 21
 }

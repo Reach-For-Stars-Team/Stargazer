@@ -1,6 +1,7 @@
 using System.Collections;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,14 @@ public class RFSEffects
             yield return null;
         }
         transform.localScale = startingScale;
+        yield break;
+    }
+    public static IEnumerator ColorFadeAndDestroy(TextMeshPro renderer, Color start, Color end, float duration)
+    {
+        yield return TransitionFade.Instance.StartCoroutine(Effects.ColorFade(renderer, start, end, duration));
+        
+        renderer.gameObject.Destroy();
+
         yield break;
     }
 

@@ -1,4 +1,4 @@
-﻿using MiraAPI.Utilities.Assets;
+﻿﻿using MiraAPI.Utilities.Assets;
 using Reactor.Utilities;
 using TMPro;
 using UnityEngine;
@@ -76,6 +76,7 @@ public static class Assets
     public static LoadableResourceAsset SilenceButton { get; } = new("Stargazer.Resources.Abilities.SilenceButton.png"); 
     public static LoadableResourceAsset ActorRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.actor.png");
     public static LoadableResourceAsset StalkButton { get; } = new("Stargazer.Resources.Abilities.StalkButton.png");
+    public static LoadableResourceAsset GuessButton { get; } = new("Stargazer.Resources.Abilities.GuessButton.png");
     public static LoadableResourceAsset WatchButton { get; } = new("Stargazer.Resources.Abilities.WatchButton.png");
     public static LoadableResourceAsset SpyRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.spy.png");
     public static LoadableResourceAsset ObserverRoleIcon { get; } = new("Stargazer.Resources.RoleIcons.observer.png");
@@ -83,6 +84,7 @@ public static class Assets
     public static LoadableResourceAsset ActButton { get; } = new("Stargazer.Resources.Abilities.ActButton.png");
     public static LoadableResourceAsset Map { get; } = new("Stargazer.Resources.Objects.Map.png"); 
     public static LoadableResourceAsset ThornsIndicator { get; } = new("Stargazer.Resources.Objects.ThornsIndicator.png"); 
+    public static LoadableResourceAsset RecruitTransitionBackground { get; } = new("Stargazer.Resources.Objects.RecruitTransitionBackground.png"); 
     public static LoadableResourceAsset PlantFlowersButton { get; } = new("Stargazer.Resources.Abilities.PlantFlowersButton.png"); 
     public static LoadableResourceAsset PlantGrassButton { get; } = new("Stargazer.Resources.Abilities.PlantGrassButton.png");
     public static LoadableResourceAsset PlantMushroomButton { get; } = new("Stargazer.Resources.Abilities.PlantMushroomButton.png"); 
@@ -183,6 +185,7 @@ public static class Assets
     public static LoadableBundleAsset<GameObject> RoleThiefMinigame { get; } = new("RoleThiefMinigame.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> ShotMinigame { get; } = new("ShotMinigame.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> SheriffShootMinigame { get; } = new("SheriffShootMinigame.prefab", Bundle);
+    public static LoadableBundleAsset<GameObject> RecruiterMinigame { get; } = new("RecruiterMinigame.prefab", Bundle);
     public static LoadableResourceAsset CrewmateRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.crewmate.png");
     public static LoadableResourceAsset ImpostorRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.impostor.png");
 }

@@ -20,6 +20,7 @@ using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using Stargazer.Components.Minigames;
 using Stargazer.Roles.Impostors.Florist;
+using Stargazer.Roles.Impostors.Mastermind;
 using Stargazer.Roles.Neutrals.Roleless;
 using UnityEngine;
 using UnityEngine.ProBuilder;
@@ -357,6 +358,7 @@ public static class RPCHandler
     [MethodRpc((uint)RPC.MoveFloristControlledPlayer)]
     public static void RpcMoveFloristControlledPlayer(this PlayerControl source, byte targetId, float x, float y)
     {
+        if (source.AmOwner) return;
         var target = PlayerControlUtils.GetPlayerById(targetId);
         if (target == null || target.Data == null || target.Data.IsDead)
         {
@@ -442,7 +444,7 @@ public static class RPCHandler
                 obj.transform.localScale = Vector3.one / 2;
                 var indicator = new GameObject("Indicator").AddComponent<SpriteRenderer>();
                 indicator.sprite = Assets.ThornsIndicator.LoadAsset();
-                indicator.transform.position = source.transform.position;
+                indicator.transform.position = source.transform.position - new Vector3(0, 0.5f, 0);
                 indicator.transform.localScale = Vector3.one / 2;
                 indicator.color = new(1, 1, 1, 0.3f);
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
@@ -450,25 +452,18 @@ public static class RPCHandler
                 source.StartCoroutine(Effects.ActionAfterDelay(1f, new System.Action(() => { playerDetectionBehaviour.enabled = true; })));
                 playerDetectionBehaviour.OnEnter = control =>
                 {
-                    control.StartCoroutine(Effects.ActionAfterDelay(0.3f, new System.Action(() =>
-                    {
-                        obj.GetComponent<SpriteRenderer>().enabled = true;
-                        indicator.color = new(1, 1, 1, 1f);
-                        if (Vector2.Distance(control.transform.position, source.transform.position) <= 0.2f)
-                        {
-                            control.CustomMurder(control, MurderResultFlags.Succeeded, showKillAnim:false);
-                        }
-                        source.StartCoroutine(Effects.ActionAfterDelay(0.7f, new System.Action(() => { obj.Destroy(); })));
-                    })));
+                    obj.GetComponent<SpriteRenderer>().enabled = true;
+                    indicator.color = new(1, 1, 1, 1f);
+                    if (source.AmOwner) source.RpcCustomMurder(control, teleportMurderer: false, resetKillTimer: false, showKillAnim:false);
+
+                    source.StartCoroutine(Effects.ActionAfterDelay(0.7f, new System.Action(() => { obj.Destroy(); })));
                 };
                 break;
             case FloristRole.FlowerTypes.Mushroom:
                 fade = false;
                 var mushroom = UnityObject.Instantiate(MapLoader.Fungle.GetComponentInChildren<Mushroom>());
-                mushroom.transform.position = source.transform.position;
-                mushroom.origPosition = source.transform.position;
-                mushroom.enabled = false;
-                source.StartCoroutine(Effects.ActionAfterDelay(1f, new System.Action(() => { mushroom.enabled = true; })));
+                mushroom.transform.position = source.transform.position - new Vector3(0, 0.35f, 0);
+                mushroom.origPosition = mushroom.transform.position;
                 break;
         }
 
@@ -490,7 +485,6 @@ public static class RPCHandler
         RoleTypes type = (RoleTypes)roleId;
         if (target.Data.Role.Role == type)
         {
-            var ogRole = target.Data.RoleType;
             RoleManager.Instance.SetRole(target, (RoleTypes)RoleId.Get<RolelessRole>());
             RoleManager.Instance.SetRole(source, type);
         }
@@ -500,9 +494,28 @@ public static class RPCHandler
         }
     }
 
+    [MethodRpc((uint)RPC.BeginRecruiting)]
+    public static void RpcBeginRecruiting(this PlayerControl source, PlayerControl target)
+    {
+        var interaction = new RecruitingInteraction(source, target);
+        if (source.AmOwner || target.AmOwner)
+        {
+            RecruiterMinigame.CreateAndShow(interaction);
+        }
+    }
+
     [MethodRpc((uint)RPC.ShootPlayer)]
     public static void RpcShootPlayer(this PlayerControl source, PlayerControl target, int bulletCount)
     {
-        if (target.AmOwner) ShotMinigame.CreateAndOpen(bulletCount);
+        if (source.AmOwner) ShotMinigame.CreateAndOpen(bulletCount);
+    }
+    [MethodRpc((uint)RPC.UpdateRecruitInteraction)]
+    public static void RpcUpdateRecruitingInteraction(this PlayerControl source, uint interactionId, uint choice)
+    {
+        var interaction = RecruitingInteraction.Interactions.Find(x => x.id == interactionId);
+        if (interaction == null)  return;
+
+        var choiceType = (ChoiceTypes) choice;
+        interaction.Update(source, choiceType);
     }
 }

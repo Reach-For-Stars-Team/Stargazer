@@ -72,7 +72,7 @@ public static class FloristControlPatches
             return;
         }
 
-        Vector2 input = GetInputVector();
+        Vector2 input = HudManager.Instance.joystick.DeltaL;
 
         float speed = controlled.MyPhysics.TrueSpeed;
         Vector2 velocity = input * speed;
@@ -92,67 +92,7 @@ public static class FloristControlPatches
                 velocity.x,
                 velocity.y
             );
+            controlled.MyPhysics.SetNormalizedVelocity(HudManager.Instance.joystick.DeltaL + controlled.MyPhysics.Velocity.normalized);
         }
-    }
-
-    private static Vector2 GetInputVector()
-    {
-        Vector2 input = Vector2.zero;
-
-        if (DestroyableSingleton<HudManager>.InstanceExists)
-        {
-            var joystick = DestroyableSingleton<HudManager>.Instance.joystick;
-
-            if (joystick != null)
-            {
-                input = joystick.DeltaL;
-            }
-        }
-
-        if (input == Vector2.zero)
-        {
-            input = GetRewiredInput();
-        }
-
-        if (input.sqrMagnitude > 1f)
-        {
-            input.Normalize();
-        }
-
-        return input;
-    }
-
-    private static Vector2 GetRewiredInput()
-    {
-        Vector2 input = Vector2.zero;
-
-        var player = ReInput.players.GetPlayer(0);
-
-        if (player == null)
-        {
-            return input;
-        }
-
-        if (player.GetButton(40))
-        {
-            input.x += 1f;
-        }
-
-        if (player.GetButton(39))
-        {
-            input.x -= 1f;
-        }
-
-        if (player.GetButton(44))
-        {
-            input.y += 1f;
-        }
-
-        if (player.GetButton(42))
-        {
-            input.y -= 1f;
-        }
-
-        return input;
     }
 }

@@ -8,6 +8,7 @@ using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using PowerTools;
 using Rewired;
+using Stargazer.Networking;
 using Stargazer.Roles.Impostors.Mastermind;
 using Stargazer.Roles.Neutrals;
 using Stargazer.Roles.Neutrals.Pirate;
@@ -17,7 +18,6 @@ namespace Stargazer.Roles.Impostors.Mastermind;
 
 public class Recruit : CustomActionButton<PlayerControl>
 {
-
     protected override void OnClick()
     {
         if (Target.Data.Role is INeutralRole)
@@ -25,13 +25,9 @@ public class Recruit : CustomActionButton<PlayerControl>
             PlayerControl.LocalPlayer.RpcCustomMurder(PlayerControl.LocalPlayer);
             return;
         }
-        else
-        {
-            Target.RpcAddModifier<RecruitedModifier>();
-        }
-
+        
+        PlayerControl.LocalPlayer.RpcBeginRecruiting(Target);
     }
-
     public override bool Enabled(RoleBehaviour role)
     {
         return role is MastermindRole;
@@ -39,26 +35,12 @@ public class Recruit : CustomActionButton<PlayerControl>
     public override string Name => "Recruit";
     public override float Cooldown => OptionGroupSingleton<MastermindOptions>.Instance.RecruitCooldown.Value;
     public override ButtonLocation Location => ButtonLocation.BottomRight;
-
-
-
-
-
-    
     public override LoadableAsset<Sprite> Sprite => Assets.ActButton; // temporary too
-
-
     public override void SetOutline(bool active)
     {
     }
-
-
-
-
     public override PlayerControl? GetTarget()
     {
         return PlayerControl.LocalPlayer.GetClosestPlayer(false, OptionGroupSingleton<MastermindOptions>.Instance.RecruitRange.Value);
     }
-
-
 }
