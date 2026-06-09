@@ -21,6 +21,7 @@ public class RoleIconBehaviour(IntPtr ptr) : MonoBehaviour(ptr)
     {
         if (myPlayer == null || myRenderer == null) return;
         
+        UpdatePosition();
         myRenderer.enabled = CanLocalPlayerSeeRole();
     }
 
@@ -75,5 +76,21 @@ public class RoleIconBehaviour(IntPtr ptr) : MonoBehaviour(ptr)
         float desiredWorldHeight = 0.4f;
         float scale = desiredWorldHeight / currentWorldHeight;
         return new(scale, scale, 1);
+    }
+
+    private void UpdatePosition()
+    {
+        if (myPlayer == null || myPlayer.cosmetics == null || myPlayer.cosmetics.nameText == null)
+        {
+            return;
+        }
+
+        float textWidth = myPlayer.cosmetics.nameText.GetRenderedWidth(true);
+
+        transform.localPosition = new Vector3(
+            -(textWidth / 2f + 0.15f) -0.1f,
+            0f,
+            0f
+        );
     }
 }
