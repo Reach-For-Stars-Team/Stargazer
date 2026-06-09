@@ -82,10 +82,10 @@ public abstract class TargetedPositionActionButton : CustomActionButton
             0
             );
 
-        bool valid = IsCurrentTargetValid();
-        targetRenderer.color = valid
-            ? new Color(1f, 1f, 1f, 0.5f)
-            : new Color(0.25f, 0.25f, 0.25f, 0.5f);
+            bool valid = IsCurrentTargetValid();
+            targetRenderer.color = valid
+                ? new Color(1f, 1f, 1f, 0.5f)
+                : new Color(0.25f, 0.25f, 0.25f, 0.5f);
         }
     }
 
