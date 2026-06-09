@@ -397,4 +397,144 @@ public static class RPCHandler
                 break;
         }
     }
+    // [MethodRpc((uint)RPC.CreateRope)]
+    // public static void RpcCreateRope(this PlayerControl source, byte target1Id, byte target2Id)
+    // {
+    //     PlayerControl target1 = PlayerControlUtils.GetPlayerById(target1Id);
+    //     PlayerControl target2 = PlayerControlUtils.GetPlayerById(target2Id);
+
+    //     if (!IsValidRopePlayer(target1) || !IsValidRopePlayer(target2))
+    //         return;
+
+    //     var rope = DebugTools.Rope2DBehaviour.Create(
+    //         first: target1,
+    //         second: target2,
+    //         totalLength: 2.5f,
+    //         segmentCount: 30,
+    //         color: Color.gray,
+    //         width: 0.08f
+    //     );
+
+    //     rope.FirstPlayer = target1;
+    //     rope.SecondPlayer = target2;
+            
+    //     rope.FirstOffset = new Vector2(0f, -0.20f);
+    //     rope.SecondOffset = new Vector2(0f, -0.20f);
+
+    //     rope.SolverIterations = 4;
+    //     rope.PointFriction = 0.9f;
+
+    //     rope.EndpointWeightInSegments = 0f;
+    //     rope.EndpointSlack = 0.7f;
+
+    //     rope.EndpointCorrectionStrength = 0.25f;
+    //     rope.MaxEndpointCorrectionPerFrame = 0.02f;
+
+
+    //     rope.TeleportWhenTooFar = true;
+    //     rope.HardTeleportDistance = 4f;
+    //     rope.TeleportNearOtherDistance = 0f;
+
+    //     rope.FixStuckSegments = true;
+    //     rope.StuckSearchRadius = 0.5f;
+    //     rope.StuckSearchSteps = 16;
+
+    //     rope.StuckSearchRadius = 1.5f;
+    //     rope.StuckSearchSteps = 24;
+
+    //     rope.MovePlayersFromInvalidTiles = true;
+    //     rope.InvalidTileCheckInterval = 0.15f;
+    //     rope.InvalidTileMoveSpeed = 4.5f;
+    //     rope.InvalidTileStopDistance = 0.06f;
+
+    //     rope.UseMapCollision = true;
+    // }
+
+    // private static bool IsValidRopePlayer(PlayerControl player)
+    // {
+    //     return player &&
+    //         player.Data != null &&
+    //         !player.Data.IsDead &&
+    //         !player.Data.Disconnected;
+    // }
+    [MethodRpc((uint)RPC.PathFollowerDelete)]
+    public static void RpcDeletePathFollower(this PlayerControl source, string followerId)
+    {
+        PathToPlayerDebug.DeleteFollower(followerId);
+    }
+
+    [MethodRpc((uint)RPC.PathFollowerStopFollowing)]
+    public static void RpcStopFollowingPathFollower(this PlayerControl source, string followerId)
+    {
+        PathToPlayerDebug.StopFollowing(followerId);
+    }
+
+    [MethodRpc((uint)RPC.PathFollowerSyncPath)]
+    public static void RpcSyncFollowerPath(
+        this PlayerControl source,
+        string followerId,
+        byte ownerId,
+        float ownerX,
+        float ownerY,
+        float[] pathData)
+    {
+        List<Vector2> path = new();
+
+        if (pathData != null)
+        {
+            for (int i = 0; i + 1 < pathData.Length; i += 2)
+            {
+                path.Add(new Vector2(pathData[i], pathData[i + 1]));
+            }
+        }
+
+        PathToPlayerDebug.ReceiveSyncFollowerPath(
+            followerId,
+            ownerId,
+            new Vector2(ownerX, ownerY),
+            path
+        );
+    }
+
+    [MethodRpc((uint)RPC.PathFollowerCreateOrUpdate)]
+    public static void RpcCreateOrUpdatePathFollower(
+        this PlayerControl source,
+        string followerId,
+        byte createOwnerId,
+        float startX,
+        float startY,
+        byte targetType,
+        byte targetId,
+        float targetX,
+        float targetY,
+        byte objectType,
+        byte objectId,
+        string objectName,
+        float scale,
+        float colorR,
+        float colorG,
+        float colorB,
+        float colorA,
+        float speed,
+        float offsetX,
+        float offsetY,
+        bool stopAtTarget)
+    {
+        PathToPlayerDebug.ReceiveCreateOrUpdateFollower(
+            followerId,
+            createOwnerId,
+            new Vector2(startX, startY),
+            (PathToPlayerDebug.FollowerTargetType)targetType,
+            targetId,
+            new Vector2(targetX, targetY),
+            (PathToPlayerDebug.FollowerObjectType)objectType,
+            objectId,
+            objectName,
+            scale,
+            new Color(colorR, colorG, colorB, colorA),
+            speed,
+            new Vector2(offsetX, offsetY),
+            stopAtTarget
+        );
+    }
 }
