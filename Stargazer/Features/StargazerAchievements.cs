@@ -27,9 +27,9 @@ public class StargazerAchievements : AchievementsTab
     
     public BaseAchievement CarrierAchievement1 { get; } = new("Weight lifter",
         "Carry and throw a body.",  "Stargazer.Resources.RoleIcons.carrier.png");
-    public BaseAchievement CarrierAchievement2 { get; } = new("Hidden in plain sight",
+    public BaseAchievement CarrierAchievement3 { get; } = new("Hidden in plain sight",
         "Throw a body into a vent.", "Stargazer.Resources.RoleIcons.carrier.png");
-    public BaseAchievement CarrierAchievement3 { get; } =
+    public BaseAchievement CarrierAchievement2 { get; } =
         new("Ouchies!", "Throw a body onto someone to crush them to death.", "Stargazer.Resources.RoleIcons.carrier.png");
     
     public BaseAchievement CowboyAchievement1 { get; } = new("Snatch em'", "Pull a player to you.",  "Stargazer.Resources.RoleIcons.cowboy.png");
