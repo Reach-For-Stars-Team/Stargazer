@@ -20,6 +20,8 @@ using UnityEngine;
 using UnityEngine.ProBuilder;
 using Helpers = MiraAPI.Utilities.Helpers;
 using Object = UnityEngine.Object;
+using Stargazer.Mapping;
+using System.Collections.Generic;
 
 namespace Stargazer.Networking;
 
