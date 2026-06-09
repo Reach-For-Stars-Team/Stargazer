@@ -6,6 +6,7 @@ using MiraAPI.Utilities.Assets;
 using Stargazer.Roles.Impostors.Phaser;
 using Reactor.Utilities.Extensions;
 using UnityEngine;
+using Stargazer.Mapping;
 
 namespace Stargazer.Utilities.Buttons;
 
@@ -40,7 +41,9 @@ public abstract class TargetedPositionActionButton : CustomActionButton
             btn.OnClick = new();
             btn.OnClick.AddListener(new Action(() =>
             {
+                Vector2 targetPos = targetRenderer.transform.position;
                 if (!IsTargetValid(targetRenderer.transform.position)) return;
+                if (!RandomizationUtils.IsWalkable(targetPos)) return;
                 PlayerControl.LocalPlayer.moveable = true;
                 OnSelectTargetPosition(targetRenderer.transform.position);
                 EffectActive = false;
@@ -56,7 +59,12 @@ public abstract class TargetedPositionActionButton : CustomActionButton
             targetRenderer.gameObject.Destroy();
         }
     }
-
+    private bool IsCurrentTargetValid()
+    {
+        if (targetRenderer == null) return false;
+        Vector2 pos = targetRenderer.transform.position;
+        return IsTargetValid(pos) && RandomizationUtils.IsWalkable(pos);
+    }
     public override void FixedUpdateHandler(PlayerControl playerControl)
     {
         base.FixedUpdateHandler(playerControl);
@@ -67,6 +75,17 @@ public abstract class TargetedPositionActionButton : CustomActionButton
             {
                 targetRenderer.transform.position += (Vector3) HudManager.Instance.joystick.DeltaL * Time.deltaTime * 4;
             }
+            
+            targetRenderer.transform.position = new Vector3(
+            targetRenderer.transform.position.x,
+            targetRenderer.transform.position.y,
+            0
+            );
+
+        bool valid = IsCurrentTargetValid();
+        targetRenderer.color = valid
+            ? new Color(1f, 1f, 1f, 0.5f)
+            : new Color(0.25f, 0.25f, 0.25f, 0.5f);
         }
     }
 
