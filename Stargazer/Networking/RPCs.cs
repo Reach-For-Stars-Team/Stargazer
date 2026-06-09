@@ -36,5 +36,10 @@ public enum RPC : uint
     UseWildCard = 14,
     
     DisconnectVent = 15,
-    SpawnFloristTrap = 16
+    SpawnFloristTrap = 16,
+
+    PathFollowerDelete = 19,
+    PathFollowerStopFollowing = 20,
+    PathFollowerSyncPath = 21,
+    PathFollowerCreateOrUpdate = 22
 }
