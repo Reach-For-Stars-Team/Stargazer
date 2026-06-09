@@ -32,8 +32,7 @@ public class PlayerControlPatches
         {
             var iconObj = new GameObject("RoleIcon");
             iconObj.transform.SetParent(__instance.cosmetics.nameTextContainer.transform);
-            iconObj.transform.localPosition =
-                new((__instance.cosmetics.nameText.GetRenderedWidth(true) + 0.2f) * -1f, 0);
+            iconObj.transform.localPosition = Vector3.zero;
             var roleIconBehaviour = iconObj.AddComponent<RoleIconBehaviour>();
             roleIconBehaviour.myPlayer = __instance;
             roleIconBehaviour.myRenderer = iconObj.AddComponent<SpriteRenderer>();
