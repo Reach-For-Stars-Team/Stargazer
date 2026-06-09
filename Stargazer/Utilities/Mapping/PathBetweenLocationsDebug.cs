@@ -194,7 +194,6 @@ public static class PathToPlayerDebug
             RpcStopFollowing(followerId);
         }
 
-        // Test GoTo: najbliższe ciało idzie do miejsca, w którym stoisz przy kliknięciu.
         if (Input.GetKeyDown(KeyCode.Backslash))
         {
             DeadBody body = UnityEngine.Object.FindObjectsOfType<DeadBody>()
@@ -259,7 +258,6 @@ public static class PathToPlayerDebug
 
             UpdateMovingStartDot(follower);
 
-            // Tylko właściciel liczy pathfinding. Inni odtwarzają ścieżkę z SyncPath.
             if (!IsLocalPathOwner(follower))
                 continue;
 
@@ -821,8 +819,6 @@ public static class PathToPlayerDebug
 
         float dist = Vector2.Distance(follower.MovingPosition, ownerPosition);
 
-        // Twardy snap tylko gdy naprawdę się rozjechało. Wcześniej było za agresywne,
-        // przez co u innych wyglądało jak stop -> teleport.
         if (force || dist > RemoteHardCorrectionDistance)
         {
             follower.MovingPosition = ownerPosition;
@@ -861,8 +857,6 @@ public static class PathToPlayerDebug
             return;
         }
 
-        // Gdy remote dalej ma path, korekta jest lekka i nie psuje ścieżki.
-        // Gdy remote nie ma już punktu ruchu, nie stoi w miejscu, tylko dogania ostatnią pozycję ownera.
         if (follower.HasCurrentMoveTarget)
         {
             follower.MovingPosition = Vector2.Lerp(
@@ -1099,8 +1093,6 @@ public static class PathToPlayerDebug
 
         if (!success || resultPath == null || resultPath.Count < 2 || IsPathRuntimeBlocked(resultPath))
         {
-            // Brak drogi / droga przez zamknięte drzwi.
-            // Nie przyjmuj nowej ścieżki, ale też nie cofaj obiektu.
             follower.HasCurrentMoveTarget = false;
 
             follower.PendingPath = null;
@@ -1253,8 +1245,6 @@ public static class PathToPlayerDebug
         if (IsLocalPathOwner(follower) &&
             RandomizationUtils.IsRuntimePathSegmentBlocked(follower.MovingPosition, follower.CurrentMoveTarget))
         {
-            // Zamknięte drzwi = blokada jak czerwony kwadrat.
-            // Nie cofamy, nie snapujemy, nie zmieniamy pozycji.
             follower.HasCurrentMoveTarget = false;
 
             follower.PendingPath = null;
