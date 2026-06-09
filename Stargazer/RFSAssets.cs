@@ -182,6 +182,9 @@ public static class Assets
     public static LoadableBundleAsset<GameObject> FloristThorns { get; } = new("FloristThorns.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> ControlledOverlay { get; } = new("FloristControlledCanvas.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> FloristFlowers { get; } = new("FloristFlowers.prefab", Bundle);
+    public static LoadableResourceAsset FloristRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.florist.png");
+    public static LoadableResourceAsset MastermindRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.mastermind.png");
+    public static LoadableResourceAsset RecruitButton { get; } =  new("Stargazer.Resources.Abilities.RecruitButton.png");
     public static LoadableBundleAsset<GameObject> RoleThiefMinigame { get; } = new("RoleThiefMinigame.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> ShotMinigame { get; } = new("ShotMinigame.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> SheriffShootMinigame { get; } = new("SheriffShootMinigame.prefab", Bundle);

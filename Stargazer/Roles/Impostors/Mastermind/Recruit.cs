@@ -35,7 +35,7 @@ public class Recruit : CustomActionButton<PlayerControl>
     public override string Name => "Recruit";
     public override float Cooldown => OptionGroupSingleton<MastermindOptions>.Instance.RecruitCooldown.Value;
     public override ButtonLocation Location => ButtonLocation.BottomRight;
-    public override LoadableAsset<Sprite> Sprite => Assets.ActButton; // temporary too
+    public override LoadableAsset<Sprite> Sprite => Assets.RecruitButton;
     public override void SetOutline(bool active)
     {
     }

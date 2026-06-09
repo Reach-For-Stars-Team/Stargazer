@@ -16,7 +16,7 @@ public class MastermindRole : ImpostorRole, ICustomRole
 
     public CustomRoleConfiguration Configuration => new(this)
     {
-        Icon = Assets.CarrierRoleIcon //TEMPORARY!! CHANGE WHEN ICON EXISTS
+        Icon = Assets.MastermindRoleIcon
     };
 
     public override void SpawnTaskHeader(PlayerControl playerControl)

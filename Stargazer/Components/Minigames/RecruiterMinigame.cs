@@ -5,6 +5,7 @@ using System.Linq;
 using Il2CppInterop.Runtime.InteropTypes.Fields;
 using Reactor.Utilities;
 using Reactor.Utilities.Attributes;
+using Reactor.Utilities.Extensions;
 using Stargazer.Networking;
 using Stargazer.Roles.Impostors.Mastermind;
 using TMPro;
@@ -24,6 +25,9 @@ public class RecruiterMinigame(IntPtr ptr) : Minigame(ptr)
     public Il2CppReferenceField<Sprite> recruiterRevealedImage;
     public List<Button> buttons;
     public RecruitingInteraction interaction;
+
+    private float TimeOpen = 0;
+    private bool DoCountdown = true;
     public void Open()
     {
         GetComponent<Canvas>().scaleFactor = 2;
@@ -77,6 +81,20 @@ public class RecruiterMinigame(IntPtr ptr) : Minigame(ptr)
         foreach (var btn in buttons)
         {
             btn.gameObject.SetActive(false);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!DoCountdown) return;
+        TimeOpen += Time.fixedDeltaTime;
+        timerText.Value.text = ((int)(10f - TimeOpen)).ToString();
+        if (TimeOpen >= 10f)
+        {
+            DoCountdown = false;
+            timerText.Value.gameObject.SetActive(false);
+            var random = buttons.Random();
+            if (random.gameObject.active) random.onClick.Invoke();
         }
     }
 

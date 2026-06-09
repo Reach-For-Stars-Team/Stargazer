@@ -18,7 +18,10 @@ public class FloristRole : ImpostorRole, ICustomRole
 
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
 
-    public CustomRoleConfiguration Configuration => new(this);
+    public CustomRoleConfiguration Configuration => new(this)
+    {
+        Icon = Assets.FloristRoleIcon
+    };
 
     public enum FlowerTypes
     {
