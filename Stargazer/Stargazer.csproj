@@ -16,4 +16,8 @@
         <EmbeddedResource Include="Resources\**\*.bundle"/>
 	    <EmbeddedResource Include="modinfo.json"/>
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj\Release\net6.0\" />
+    </ItemGroup>
 </Project>
