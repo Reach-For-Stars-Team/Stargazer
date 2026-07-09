@@ -10,11 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WanderingPixel")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Reach For Stars Team")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("The Silliest Among Us Mod")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68b097fbbe3d4dad1a89bf7f6401169593f28abc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3290ba4ea05748c30bfc1904681dd48214979bec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stargazer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stargazer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,7 +16,7 @@ using UnityEngine.EventSystems;
 
 namespace Stargazer;
 
-[BepInAutoPlugin("com.missingpixel.stargazer", "Stargazer", "2.0.1")]
+[BepInAutoPlugin("com.missingpixel.stargazer", "Stargazer", "2.1.0")]
 [BepInProcess("Among Us.exe")]
 [BepInDependency(ReactorPlugin.Id)]
 [BepInDependency(MiraApiPlugin.Id)]

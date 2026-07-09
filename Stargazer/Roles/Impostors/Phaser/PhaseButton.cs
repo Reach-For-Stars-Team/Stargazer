@@ -3,9 +3,9 @@ using MiraAPI.Hud;
 using MiraAPI.Utilities;
 using MiraAPI.Utilities.Assets;
 using Stargazer.Utilities;
-using Stargazer.Utilities.Buttons;
 using Reactor.Utilities.Extensions;
 using Rewired;
+using Stargazer.APIs.Buttons;
 using UnityEngine;
 
 namespace Stargazer.Roles.Impostors.Phaser;

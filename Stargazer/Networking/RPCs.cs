@@ -31,10 +31,16 @@ public enum RPC : uint
     
     Sleep = 12,
     
-    ThrowShuriken = 13,
+    SwapRoles = 13,
     
     UseWildCard = 14,
     
     DisconnectVent = 15,
-    SpawnFloristTrap = 16
+    SpawnFloristTrap = 16,
+    MoveFloristControlledPlayer = 17,
+    ForceMurder = 18,
+    ShootPlayer = 19,
+    BeginRecruiting = 20,
+    UpdateRecruitInteraction = 21,
+    SetMeetingModifier
 }
