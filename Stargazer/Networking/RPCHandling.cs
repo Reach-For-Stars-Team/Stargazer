@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Linq;
 using AmongUs.GameOptions;
@@ -390,7 +391,7 @@ public static class RPCHandler
                 obj = UnityObject.Instantiate(Assets.FloristTallGrass.LoadAsset());
                 obj.transform.position = source.transform.position;
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
-                playerDetectionBehaviour.Radius = new(2, 1.5f);
+                playerDetectionBehaviour.Radius = new(1.5f, 0.7f);
                 playerDetectionBehaviour.OnEnter = control =>
                 {
                     control.AddModifier<SlowedDownModifier>();
@@ -399,6 +400,12 @@ public static class RPCHandler
                 {
                     control.RemoveModifier<SlowedDownModifier>();
                 };
+                //DebugRadius.CreateCircle(
+                //    obj.transform,
+                //    playerDetectionBehaviour.LocalOffset,
+                //    playerDetectionBehaviour.Radius,
+                //    999
+                //);
                 break;
             case FloristRole.FlowerTypes.Flowers:
                 obj = UnityObject.Instantiate(Assets.FloristFlowers.LoadAsset());
@@ -407,18 +414,16 @@ public static class RPCHandler
                 PlayerMaterial.SetColors(FloristRole.FlowerColors.Random(), obj.GetComponent<SpriteRenderer>());
 
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
-                playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
-                // playerDetectionBehaviour.Size = new Vector2(2.7f, 1.5f);
 
                 playerDetectionBehaviour.LocalOffset = new Vector2(-0.2f, -0.7f);
-                playerDetectionBehaviour.Radius = new Vector2(1.35f, 0.75f);
+                playerDetectionBehaviour.Radius = new Vector2(2.5f, 1f);
 
-                // DebugRadius.CreateCircle(
-                //     obj.transform,
-                //     playerDetectionBehaviour.LocalOffset,
-                //     playerDetectionBehaviour.Radius,
-                //     999
-                // );
+                //DebugRadius.CreateCircle(
+                //    obj.transform,
+                //    playerDetectionBehaviour.LocalOffset,
+                //    playerDetectionBehaviour.Radius,
+                //    999
+                //);
 
                 playerDetectionBehaviour.OnEnter = control =>
                 {
@@ -448,6 +453,7 @@ public static class RPCHandler
                 indicator.transform.localScale = Vector3.one / 2;
                 indicator.color = new(1, 1, 1, 0.3f);
                 playerDetectionBehaviour = obj.AddComponent<PlayerDetectionBehaviour>();
+                playerDetectionBehaviour.Radius = new(1, 4);
                 playerDetectionBehaviour.enabled = false;
                 source.StartCoroutine(Effects.ActionAfterDelay(1f, new System.Action(() => { playerDetectionBehaviour.enabled = true; })));
                 playerDetectionBehaviour.OnEnter = control =>
@@ -458,6 +464,12 @@ public static class RPCHandler
 
                     source.StartCoroutine(Effects.ActionAfterDelay(0.7f, new System.Action(() => { obj.Destroy(); })));
                 };
+                //DebugRadius.CreateCircle(
+                //    obj.transform,
+                //    playerDetectionBehaviour.LocalOffset,
+                //    playerDetectionBehaviour.Radius,
+                //    999
+                //);
                 break;
             case FloristRole.FlowerTypes.Mushroom:
                 fade = false;

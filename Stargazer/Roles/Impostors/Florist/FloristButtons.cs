@@ -107,9 +107,7 @@ public class ControlFlowerButton : CustomActionButton
                 EffectActive = true;
             },
             "#ce007b",
-            ImprovedCustomPlayerMenu.EmptyIcon
-            // "#ce007b",
-            // Assets.JesterIcon.LoadAsset()
+            Assets.TakeoverButton.LoadAsset()
         );
         Timer = 0;
     }
@@ -172,7 +170,7 @@ public class ControlFlowerButton : CustomActionButton
 
     public override float Cooldown => OptionGroupSingleton<FloristOptions>.Instance.ControlCooldown.Value;
     
-    public override LoadableAsset<Sprite> Sprite => Assets.PlaceHolder;
+    public override LoadableAsset<Sprite> Sprite => Assets.TakeoverButton;
 }
 public class ControlledKillButton : CustomActionButton<PlayerControl>
 {
@@ -300,5 +298,5 @@ public class ControlledKillButton : CustomActionButton<PlayerControl>
 
     public override float Distance => 1.5f;
 
-    public override LoadableAsset<Sprite> Sprite => Assets.PlaceHolder;
+    public override LoadableAsset<Sprite> Sprite => Assets.KillButton;
 }

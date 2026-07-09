@@ -41,5 +41,6 @@ public enum RPC : uint
     ForceMurder = 18,
     ShootPlayer = 19,
     BeginRecruiting = 20,
-    UpdateRecruitInteraction = 21
+    UpdateRecruitInteraction = 21,
+    SetMeetingModifier
 }

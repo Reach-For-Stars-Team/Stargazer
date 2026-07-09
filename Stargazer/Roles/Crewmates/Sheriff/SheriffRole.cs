@@ -3,6 +3,7 @@ using System.Linq;
 using MiraAPI.Events;
 using MiraAPI.Events.Vanilla.Gameplay;
 using MiraAPI.Events.Vanilla.Meeting.Voting;
+using MiraAPI.PluginLoading;
 using MiraAPI.Roles;
 using Reactor.Utilities.Extensions;
 using Stargazer.Components.Minigames;
@@ -12,6 +13,7 @@ using UnityEngine;
 
 namespace Stargazer.Roles.Crewmates.Sheriff;
 
+[MiraIgnore]
 public class SheriffRole : CrewmateRole, ICustomRole
 {
     public string RoleName => "Sheriff";

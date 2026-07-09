@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Reactor.Utilities;
 using Reactor.Utilities.Extensions;
 using TMPro;
@@ -113,5 +114,50 @@ public class RFSEffects
             }
             self.color = target;
         }
+    }
+
+    public static IEnumerator ShowLettersOnScreen(string text)
+    {
+        var container = new GameObject("TextContainer");
+        container.transform.parent = HudManager.Instance.transform;
+        container.transform.localPosition = Vector3.zero;
+        int xPos = text.Length / -2;
+        List<TextMeshPro> letters = [];
+        foreach (char c in text)
+        {
+            var tmp = UnityObject.Instantiate(HudManager.Instance.KillButton.buttonLabelText, container.transform);
+            tmp.GetComponent<TextTranslatorTMP>().Destroy();
+            tmp.text = c.ToString();
+            tmp.transform.localPosition = new Vector3(xPos, 0, -10);
+            tmp.transform.localScale = Vector3.zero;
+            tmp.fontSize = 64;
+            tmp.fontStyle = FontStyles.Italic;
+            xPos++;
+            tmp.color = Color.gray;
+            letters.Add(tmp);
+        }
+
+        yield return Coroutines.Start(CoAnimateText(letters, container));
+    }
+    private static IEnumerator CoAnimateText(List<TextMeshPro> letters, GameObject container)
+    {
+        var wait = new WaitForSeconds(0.2f);
+        foreach (TextMeshPro tmp in letters)
+        {
+            Coroutines.Start(CoAnimateLetter(tmp, 0.7f));
+            yield return wait;
+        }
+        yield return new WaitForSeconds(1f);
+        container.Destroy();
+        yield break;
+    }
+
+    private static IEnumerator CoAnimateLetter(TextMeshPro tmp, float duration)
+    {
+        yield return tmp.StartCoroutine(Effects.Bloop(0, tmp.transform, 3, duration*0.3f));
+        yield return new WaitForSeconds(duration*0.1f);
+        yield return tmp.StartCoroutine(Effects.Slide2D(tmp.transform, tmp.transform.localPosition, new(tmp.transform.localPosition.x, 10), duration*0.6f));
+        tmp.gameObject.Destroy();
+        yield break;
     }
 }

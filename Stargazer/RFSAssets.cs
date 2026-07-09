@@ -183,6 +183,8 @@ public static class Assets
     public static LoadableBundleAsset<GameObject> ControlledOverlay { get; } = new("FloristControlledCanvas.prefab", Bundle);
     public static LoadableBundleAsset<GameObject> FloristFlowers { get; } = new("FloristFlowers.prefab", Bundle);
     public static LoadableResourceAsset FloristRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.florist.png");
+    public static LoadableResourceAsset TakeoverButton = new("Stargazer.Resources.Abilities.TakeoverButton.png");
+    public static LoadableResourceAsset KillButton = new("Stargazer.Resources.Abilities.KillButton.png");
     public static LoadableResourceAsset MastermindRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.mastermind.png");
     public static LoadableResourceAsset RecruitButton { get; } =  new("Stargazer.Resources.Abilities.RecruitButton.png");
     public static LoadableBundleAsset<GameObject> RoleThiefMinigame { get; } = new("RoleThiefMinigame.prefab", Bundle);
@@ -191,4 +193,8 @@ public static class Assets
     public static LoadableBundleAsset<GameObject> RecruiterMinigame { get; } = new("RecruiterMinigame.prefab", Bundle);
     public static LoadableResourceAsset CrewmateRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.crewmate.png");
     public static LoadableResourceAsset ImpostorRoleIcon { get; } =  new("Stargazer.Resources.RoleIcons.impostor.png");
+    public static LoadableResourceAsset CloakFront { get; } =  new("Stargazer.Resources.Objects.CloakFront.png");
+    public static LoadableResourceAsset CloakBack { get; } =   new("Stargazer.Resources.Objects.CloakBack.png");
+    public static LoadableResourceAsset Smoke = new("Stargazer.Resources.Objects.SmokeCloud.png");
+    public static LoadableResourceAsset Explosion = new("Stargazer.Resources.Objects.ExplodeSprite.png");
 }

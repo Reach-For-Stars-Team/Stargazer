@@ -16,4 +16,5 @@
         <EmbeddedResource Include="Resources\**\*.bundle"/>
 	    <EmbeddedResource Include="modinfo.json"/>
     </ItemGroup>
+    
 </Project>

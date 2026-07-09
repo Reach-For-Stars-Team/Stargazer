@@ -11,21 +11,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/Stargazer.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/Stargazer.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/Stargazer.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/Stargazer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/Stargazer.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26,_1_33 PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_2_26__1_33PM__Changes_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Components/GunpowderSmoke.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Resources/Abilities/KillButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/CloakedModifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/PursuerKillButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/PursuerRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stargazer/Utilities/ParticleUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ai/mcp/mcp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26,_8_55 PM_[Changes]1/Stargazer.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26,_8_55 PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26__8_55PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/RoleIcons/florist.png" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/RoleIcons/florist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Mastermind.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Mastermind.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Mastermind/Recruit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/RFSPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSPlugin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png~" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png~" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffRole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristButtons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Phaser/PhaseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Phaser/PhaseButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Stargazer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Stargazer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/Buttons/TargetedPositionActionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/APIs/Buttons/TargetedPositionActionButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" afterDir="false" />
@@ -45,7 +54,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="441" />
+    <option name="cachedIndexableFilesCount" value="454" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -66,13 +75,6 @@
         &quot;number&quot;: 2
       },
       &quot;lastSeen&quot;: 1780689020082
-    },
-    {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDOSqvlHM7jQcSW&quot;,
-        &quot;number&quot;: 3
-      },
-      &quot;lastSeen&quot;: 1780691985199
     }
   ]
 }</component>
@@ -100,13 +102,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6388fd7c8acd4326a1ae6b3f3a44466d74ba00/0c/523c8c4a/Effects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6388fd7c8acd4326a1ae6b3f3a44466d74ba00/53/4dd3bc11/Minigame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/0a/c8bcd076/PlayerControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/57/14fa61c6/PlayerPhysics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/57/14fa61c6/PlayerPhysics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/76/f3d1998c/OptionsConsole.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b7309cca0fc54639bba6a775740af6962d8200/f3/0f6daac4/CustomNetworkTransform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c06df198e8e44ae6b48d6fc90310b210b508/27/a615f2d6/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/0b39d1b15a364571928d51e233ababe12d7000/1d/0da0fc4d/Assembly-CSharp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/681f3cbc7ebee3ec2d61b6ad1f440f94779a44339d5c43ffb8da49d026/LoadableResourceAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b2b1b3ef5467c48243c17bbd17b2087a64c2a83a197bf6910bf3a79387ff874/ICustomRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dd5f7ad2242c784d24de746435c6a27b8825fc2b233233491737a2aee471a730/ModifierExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e41917b4beb5881b6b4e7a6d599d1c3cce4e2f5c9a957e65f3b8692424c42e2/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.nuget/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Stargazer/Components/Minigames/RecruiterMinigame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -520,15 +523,42 @@
       <workItem from="1780929462971" duration="183000" />
       <workItem from="1780931760740" duration="310000" />
       <workItem from="1781042252910" duration="1237000" />
-      <workItem from="1781043631182" duration="494000" />
-    </task>
-    <task id="LOCAL-00005" summary="Make TargetedPositionActionButton use [MiraIgnore] Attribute">
-      <option name="closed" value="true" />
-      <created>1769868563652</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769868563652</updated>
+      <workItem from="1781043631182" duration="1146000" />
+      <workItem from="1781046668161" duration="22000" />
+      <workItem from="1781047324242" duration="42000" />
+      <workItem from="1781051408421" duration="17000" />
+      <workItem from="1781096206588" duration="161000" />
+      <workItem from="1781305445179" duration="75000" />
+      <workItem from="1781395286223" duration="665000" />
+      <workItem from="1781430963875" duration="225000" />
+      <workItem from="1781431409050" duration="567000" />
+      <workItem from="1781433425716" duration="191000" />
+      <workItem from="1781520116665" duration="41000" />
+      <workItem from="1781522387520" duration="26000" />
+      <workItem from="1781550071686" duration="40000" />
+      <workItem from="1781715003500" duration="29000" />
+      <workItem from="1781718225635" duration="843000" />
+      <workItem from="1781722935300" duration="603000" />
+      <workItem from="1781724261612" duration="15000" />
+      <workItem from="1781880118958" duration="1112000" />
+      <workItem from="1781885168224" duration="2193000" />
+      <workItem from="1781887518708" duration="293000" />
+      <workItem from="1782517262463" duration="83000" />
+      <workItem from="1782561142342" duration="250000" />
+      <workItem from="1783560210767" duration="1647000" />
+      <workItem from="1783599599791" duration="1425000" />
+      <workItem from="1783603437625" duration="196000" />
+      <workItem from="1783606474740" duration="47000" />
+      <workItem from="1783609568112" duration="606000" />
+      <workItem from="1783613577651" duration="3866000" />
+      <workItem from="1783618579574" duration="625000" />
+      <workItem from="1783620738029" duration="604000" />
+      <workItem from="1783622270024" duration="233000" />
+      <workItem from="1783623659612" duration="2563000" />
+      <workItem from="1783626657684" duration="96000" />
+      <workItem from="1783628913373" duration="4000" />
+      <workItem from="1783629803581" duration="1114000" />
+      <workItem from="1783631127650" duration="356000" />
     </task>
     <task id="LOCAL-00006" summary="WIP Archer Role">
       <option name="closed" value="true" />
@@ -914,7 +944,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780870027378</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Assets">
+      <option name="closed" value="true" />
+      <created>1781044990860</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1781044990861</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -959,7 +997,8 @@
     <MESSAGE value="merge" />
     <MESSAGE value="Merge Mastermind role into dev branch" />
     <MESSAGE value="Merge remote-tracking branch 'origin/dev' into dev&#10;&#10;# Conflicts:&#10;#&#9;Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs&#10;#&#9;Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/dev' into dev&#10;&#10;# Conflicts:&#10;#&#9;Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs&#10;#&#9;Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
+    <MESSAGE value="Assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -976,19 +1015,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs</url>
-          <line>459</line>
-          <properties documentPath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" containingFunctionPresentation="Lambda expression inside Method 'RpcSpawnFloristTrap'">
-            <startOffsets>
-              <option value="18533" />
-            </startOffsets>
-            <endOffsets>
-              <option value="18534" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
