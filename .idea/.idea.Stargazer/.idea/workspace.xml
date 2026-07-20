@@ -11,30 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a1a1721-cb63-4155-bddb-a44a77ef96eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Stargazer/Components/GunpowderSmoke.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stargazer/Resources/Abilities/KillButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/CloakedModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/PursuerKillButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Pursuer/PursuerRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stargazer/Utilities/ParticleUtilities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ai/mcp/mcp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26,_8_55 PM_[Changes]1/Stargazer.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26,_8_55 PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Merge_at_6_5_26__8_55PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCHandling.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Networking/RPCs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSAssets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/RFSPlugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/RFSPlugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png~" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Resources/Objects/FlowerTakeover.png~" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Crewmates/Sheriff/SheriffRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Florist/FloristButtons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Phaser/PhaseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Roles/Impostors/Phaser/PhaseButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Stargazer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Stargazer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/Buttons/TargetedPositionActionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/APIs/Buttons/TargetedPositionActionButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/Utilities/RFSEffects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/Resources/rfsbundle-win.bundle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/bin/Release/net6.0/Stargazer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfo.cs" afterDir="false" />
@@ -45,6 +23,10 @@
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/Stargazer.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/ref/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/ref/Stargazer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/refint/Stargazer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Release/net6.0/refint/Stargazer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/Stargazer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/Stargazer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stargazer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stargazer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Stargazer/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -54,7 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="454" />
+    <option name="cachedIndexableFilesCount" value="459" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -161,7 +143,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;git.auto.fetch.suggestion.counter&quot;: &quot;3&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
@@ -559,6 +541,7 @@
       <workItem from="1783628913373" duration="4000" />
       <workItem from="1783629803581" duration="1114000" />
       <workItem from="1783631127650" duration="356000" />
+      <workItem from="1784546620177" duration="2226000" />
     </task>
     <task id="LOCAL-00006" summary="WIP Archer Role">
       <option name="closed" value="true" />

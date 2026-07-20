@@ -1,0 +1,25 @@
+<changelist name="Uncommitted_changes_before_Update_at_7_13_26,_7_05 PM_[Changes]" date="1783965987684" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Update_at_7_13_26,_7_05 PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 7/13/26, 7:05 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/Resources/rfsbundle-android.bundle" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="Stargazer/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Update_at_7_13_26,_7_05 PM_[Changes]/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/Resources/rfsbundle-win.bundle" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.assets.cache" />
+    <option name="AFTER_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Update_at_7_13_26,_7_05 PM_[Changes]/Stargazer.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="Stargazer/obj/Release/net6.0/Stargazer.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Stargazer/.idea/shelf/Uncommitted_changes_before_Update_at_7_13_26,_7_05 PM_[Changes]/Stargazer.AssemblyInfoInputs.cache" />
+  </binary>
+</changelist>
